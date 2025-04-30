@@ -26,7 +26,7 @@ export default function HeroSection() {
                 as he stood destitute on the shores of the Aegean Sea.
               </p>
               <a 
-                  href="/story" 
+                  href="#nav-grid" 
                   className="inline-block mt-8 px-8 py-3 bg-antique text-nautical 
                             border-2 border-nautical rounded-xl font-title text-lg 
                             tracking-wider shadow-md hover:bg-blush transition-all duration-200"

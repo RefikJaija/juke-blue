@@ -20,7 +20,7 @@ export default function Footer() {
           <div className="mb-8">
             <h3 className="font-title text-2xl mb-4">Juke Blue</h3>
             <p className="text-antique/80">
-              Spirits forged by the sea's journey. Crafted in Australia.
+              Spirits forged by the sea's journey. Crafted in Germany.
             </p>
           </div>
 

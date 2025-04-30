@@ -8,7 +8,9 @@ export default function Home() {
     <div>
       <Navbar />
       <HeroSection />
+      <section id="nav-grid" className="scroll-mt-20"> {/* Adds scroll margin */}
       <NavGrid />
+      </section>
       <Footer />
     </div>
   )

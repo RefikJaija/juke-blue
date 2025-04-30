@@ -12,6 +12,13 @@ module.exports = {
         nautical: "#092c3c",
         blush: "#c69693",
         antique: "#e7c5b1"
+      },
+      boxShadow: {
+        'lg': '0 10px 15px -3px rgba(10, 46, 66, 0.1), 0 4px 6px -2px rgba(10, 46, 66, 0.05)',
+        'xl': '0 20px 25px -5px rgba(10, 46, 66, 0.1), 0 10px 10px -5px rgba(10, 46, 66, 0.04)'
+      },
+      transitionProperty: {
+        'shadow': 'box-shadow'
       }
     },
   },
