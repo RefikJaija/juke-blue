@@ -7,15 +7,20 @@ export default function Navbar() {
   return (
     <nav className="bg-nautical/80 backdrop-blur-sm p-4 fixed w-full z-50">
       <div className="max-w-6xl mx-auto flex justify-between items-center">
-        {/* Logo + Title */}
-        <a href="/" className="flex items-center space-x-2">
-          <img
-            src="/images/Juke_Blue_White.png" 
-            alt="logo-test"
-            className="w-10 h-10"
-          />
-          <span className="font-title text-3xl text-antique">Juke Blue</span>
-        </a>
+        {/* Logo + Text Image */}
+          <a href="/" className="flex items-center space-x-2">
+            <img
+              src="/images/Juke_Blue_White.png" 
+              alt="Logo icon"
+              className="w-10 h-10"
+            />
+            <img
+              src="/images/logoname.png"  // <-- image with "Juke Blue" text
+              alt="Juke Blue Text"
+              className="h-8 w-auto"             // auto width, keeps proportions
+            />
+          </a>
+
 
         {/* Desktop Nav links */}
         <div className="hidden md:flex space-x-6">

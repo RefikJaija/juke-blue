@@ -9,9 +9,9 @@ module.exports = {
         title: ['var(--font-rye)', 'Cormorant Garamond', 'serif'], // Titles
       },
       colors: {
-        nautical: "#092c3c",
+        nautical: "#0A2E42",
         blush: "#c69693",
-        antique: "#e7c5b1"
+        antique: "#DCCCB6"
       },
       boxShadow: {
         'lg': '0 10px 15px -3px rgba(10, 46, 66, 0.1), 0 4px 6px -2px rgba(10, 46, 66, 0.05)',
