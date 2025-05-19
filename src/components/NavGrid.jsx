@@ -89,6 +89,8 @@
 //   )
 // }
 
+import Link from "next/link";
+
 const links = [
   { 
     title: "COCKTAILS", 
@@ -120,7 +122,7 @@ export default function NavGrid() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto p-6">
       {links.map((link) => (
-        <a 
+        <Link
           key={link.path}
           href={link.path}
           className="group relative block w-full rounded-xl overflow-hidden border-4 border-nautical/40 
@@ -147,7 +149,7 @@ export default function NavGrid() {
 
           {/* Optional bottom wave */}
           <div className="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-blush/30 via-nautical/20 to-blush/30 opacity-80 group-hover:opacity-100 transition-opacity animate-wave" />
-        </a>
+        </Link>
       ))}
     </div>
   );

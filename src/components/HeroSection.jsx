@@ -1,4 +1,6 @@
 // components/HeroSection.jsx
+import Link from "next/link";
+
 export default function HeroSection() {
   return (
     <section className="relative h-screen">
@@ -25,14 +27,14 @@ export default function HeroSection() {
               <p className="text-blush font-bold text-xl">
                 as he stood destitute on the shores of the Aegean Sea.
               </p>
-              <a 
-                  href="#nav-grid" 
+              <Link
+                  href="#nav-grid"
                   className="inline-block mt-8 px-8 py-3 bg-antique text-nautical 
                             border-2 border-nautical rounded-xl font-title text-lg 
                             tracking-wider shadow-md hover:bg-blush transition-all duration-200"
                 >
                   See how he got there →
-                </a>
+                </Link>
 
             </div>
         </div>

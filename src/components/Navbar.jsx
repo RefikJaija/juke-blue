@@ -1,5 +1,6 @@
 "use client"; 
 import { useState } from 'react';
+import Link from "next/link";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,7 +9,7 @@ export default function Navbar() {
     <nav className="bg-nautical/80 backdrop-blur-sm p-4 fixed w-full z-50">
       <div className="max-w-6xl mx-auto flex justify-between items-center">
         {/* Logo + Text Image */}
-          <a href="/" className="flex items-center space-x-2">
+          <Link href="/" className="flex items-center space-x-2">
             <img
               src="/images/Juke_Blue_White.png" 
               alt="Logo icon"
@@ -19,15 +20,15 @@ export default function Navbar() {
               alt="Juke Blue Text"
               className="h-8 w-auto"             // auto width, keeps proportions
             />
-          </a>
+          </Link>
 
 
         {/* Desktop Nav links */}
         <div className="hidden md:flex space-x-6">
-          <a href="/shop" className="text-antique hover:text-blush">Shop</a>
-          <a href="/cocktails" className="text-antique hover:text-blush">Cocktails</a>
-          <a href="/songbook" className="text-antique hover:text-blush">SongBook</a>
-          <a href="/map" className="text-antique hover:text-blush">Map</a>
+          <Link href="/shop" className="text-antique hover:text-blush">Shop</Link>
+          <Link href="/cocktails" className="text-antique hover:text-blush">Cocktails</Link>
+          <Link href="/songbook" className="text-antique hover:text-blush">SongBook</Link>
+          <Link href="/map" className="text-antique hover:text-blush">Map</Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -63,19 +64,19 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div className={`md:hidden ${isOpen ? 'block' : 'hidden'}`}>
-        <div className="px-4 pt-2 pb-4 space-y-4 bg-nautical/95 backdrop-blur-sm">
-          <a href="/shop" className="block text-antique hover:text-blush" onClick={() => setIsOpen(false)}>
+        <div className="px-4 pt-2 pb-4 space-y-4 bg-nautical/95 backdrop-blur-sm mt-2">
+          <Link href="/shop" className="block text-antique hover:text-blush" onClick={() => setIsOpen(false)}>
             Shop
-          </a>
-          <a href="/cocktails" className="block text-antique hover:text-blush" onClick={() => setIsOpen(false)}>
+          </Link>
+          <Link href="/cocktails" className="block text-antique hover:text-blush" onClick={() => setIsOpen(false)}>
             Cocktails
-          </a>
-          <a href="/songbook" className="block text-antique hover:text-blush" onClick={() => setIsOpen(false)}>
+          </Link>
+          <Link href="/songbook" className="block text-antique hover:text-blush" onClick={() => setIsOpen(false)}>
             SongBook
-          </a>
-          <a href="/map" className="block text-antique hover:text-blush" onClick={() => setIsOpen(false)}>
+          </Link>
+          <Link href="/map" className="block text-antique hover:text-blush" onClick={() => setIsOpen(false)}>
             Map
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
