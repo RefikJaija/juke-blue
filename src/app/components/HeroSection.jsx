@@ -76,7 +76,7 @@ export default function HeroSection() {
               transition={{ type: 'spring', stiffness: 300, damping: 30 }}
               onCanPlay={() => readyToPlay && handlePlay()}
             >
-              <source src="/videos/hero-full.mp4" type="video/mp4" />
+              <source src="/videos/hero.mp4" type="video/mp4" />
             </motion.video>
 
             {/* Custom play overlay */}
