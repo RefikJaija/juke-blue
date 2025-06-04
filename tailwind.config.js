@@ -32,6 +32,7 @@ module.exports = {
     },
   },
   plugins: [
+    require('@tailwindcss/forms'),
     function({ addUtilities, theme }) {
       // Add custom utilities for text-shadow, ensuring hover variants are enabled
       const newTextShadows = {

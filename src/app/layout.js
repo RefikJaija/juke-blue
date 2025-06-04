@@ -47,6 +47,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import AgeVerification from './components/AgeVerification'
 import CookieConsent from './components/CookieConsent'
+import WelcomeGate from './components/WelcomeGate'; 
 
 const rye = Rye({
   weight: '400',
@@ -59,8 +60,9 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${rye.variable} h-full`}>
       <body className="h-full min-h-screen bg-blush relative">
 
-        {/* Add Age Verification FIRST */}
-        <AgeVerification />
+        {/* Add Age Verification  */}
+        {/* Add Cookie Consent  */}
+         <WelcomeGate /> 
 
         {/* 1. Sand‐grain overlay */}
         <div
@@ -88,8 +90,6 @@ export default function RootLayout({ children }) {
           <Footer />
         </div>
 
-        {/* Add Cookie Consent LAST */}
-        <CookieConsent />
 
       </body>
     </html>
