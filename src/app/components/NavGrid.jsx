@@ -27,7 +27,7 @@ const links = [
 
 export default function NavGrid() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto p-6">
+    <div className="grid mt-16 grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto p-6">
       {links.map((link) => (
         <a
           key={link.path}
