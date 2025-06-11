@@ -3,6 +3,7 @@ module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      width: { 'half-minus-2rem': 'calc(50% - 2rem)' },
       fontFamily: {
         sans:  ['var(--font-rye)', 'Arial', 'sans-serif'],
         title: ['var(--font-rye)', 'Cormorant Garamond', 'serif'],
