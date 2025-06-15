@@ -567,10 +567,10 @@ export default function GrandCocktailsPage() {
     <div className=""> {/* Main page background - this can be full width */}
 
       {/* This div is EXCLUSIVELY for the large frame, allowing it to span wider */}
-      <div className="relative w-full max-w-[2000px] mx-auto mb-32 mt-48 aspect-[1.6/1] lg:aspect-[1.9/1]">{/* Frame container */}
+      <div className="relative w-full max-w-[1300px] mx-auto mb-32 mt-36 aspect-[1.6/1] lg:aspect-[1.9/1]">{/* Frame container */}
         {/* The frame image as a background */}
         <Image
-          src="/images/card_option_1.png" // Verify this path!
+          src="/images/frame-cocktail2.png" // Verify this path!
           alt="Decorative frame for title"
           layout="fill"
           objectFit="contain"
@@ -580,7 +580,7 @@ export default function GrandCocktailsPage() {
 
         {/* The title text, positioned absolutely over the frame */}
         <h1 className="font-title text-xl sm:text-3xl md:text-4xl lg:text-5xl text-nautical text-center leading-tight absolute inset-0 flex items-center justify-center px-[50px] py-[30px] sm:px-[120px] sm:py-[60px] lg:px-[350px] lg:py-[100px] text-shadow-default z-10">
-          Discover some of the Juke's personal creations for Double Blue
+          Discover Juke's <br></br> personal creations <br></br> for Double Blue
         </h1>
       </div>
 
@@ -662,9 +662,6 @@ export default function GrandCocktailsPage() {
         <div className="text-center mt-16 sm:mt-20"> {/* Adjusted margin */}
           <Link href="/map" className="inline-flex items-center px-8 py-4 sm:px-10 sm:py-5 bg-nautical text-antique rounded-full hover:bg-blush transition-colors font-title uppercase text-xl sm:text-2xl shadow-xl hover:shadow-2xl tracking-wide border-2 border-antique hover:border-nautical"> {/* Adjusted padding and font size */}
             <span className="text-shadow-default">Discover Bars</span>
-            <svg className="ml-3 sm:ml-4 w-5 h-5 sm:w-6 sm:h-6 transform group-hover:rotate-45 transition-transform" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414L7.586 9.03a1 1 0 101.414 1.414l1.707-1.707zM10 11a1 1 0 100 2h.01a1 1 0 100-2H10z" clipRule="evenodd"></path>
-            </svg>
           </Link>
         </div>
 

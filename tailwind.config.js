@@ -21,7 +21,7 @@ module.exports = {
         shadow: 'box-shadow',
       },
       backgroundImage: {
-        grain:   "url('/images/sand.jpg')",
+        grain:   "url('/images/sand.jpeg')",
         backgroundImage: "url('/images/vector-background.png')",
       },
       // --- NEW: Define custom text shadows using existing colors or neutral white ---

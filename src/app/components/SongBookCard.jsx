@@ -16,7 +16,7 @@ const SongBookCard = ({ title, link }) => {
               className="absolute inset-0 bg-grain bg-cover bg-center opacity-30 z-10"
           ></div>
         <video controls={true} className={'aspect-video w-full z-20'}>
-          <source src="/videos/hero2.mp4" type="video/mp4" />
+          <source src="/videos/hero-clip.mp4" type="video/mp4" />
         </video>
         <h2 className={'my-3 w-full text-center text-blush capitalize z-20 font-pirate text-3xl md:text-4xl tracking-wider mb-1\n' +
             '                           text-shadow-default\n' +

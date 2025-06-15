@@ -2,7 +2,7 @@
 export default function TermsOfService() {
   return (
     <div className="max-w-4xl mx-auto px-4 py-16">
-      <h1 className="font-title text-4xl text-nautical mb-8 mt-4">
+      <h1 className="font-title text-4xl text-nautical mb-8 mt-32">
         Allgemeine Geschäftsbedingungen mit Kundeninformationen
       </h1>
       <div className="prose prose-lg text-antique">
