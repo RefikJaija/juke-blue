@@ -570,7 +570,7 @@ export default function GrandCocktailsPage() {
       <div className="relative w-full max-w-[1300px] mx-auto mb-32 mt-36 aspect-[1.6/1] lg:aspect-[1.9/1]">{/* Frame container */}
         {/* The frame image as a background */}
         <Image
-          src="/images/frame-cocktail2.png" // Verify this path!
+          src="/images/frame-cocktail.png" // Verify this path!
           alt="Decorative frame for title"
           layout="fill"
           objectFit="contain"
