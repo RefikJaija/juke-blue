@@ -22,7 +22,14 @@ export default function Home() {
   return (
     /* make sure this wrapper is above backgrounds */
     <div className="relative z-10">
-      <HeroSection />
+      <HeroSection
+      previewClip="/videos/hero-clip.mp4"
+      fullVideo="/videos/hero.mp4"
+      title=""
+      description="Juke Blue's Double Blue instills the holy essence of nature into every blessed drop.
+          Its secret was revealed as he stood destitute on the shores of the Aegean Sea."
+      buttonText="See how he got there →"
+    />
       <section id="nav-grid" className="scroll-mt-20">
         <NavGrid />
       </section>

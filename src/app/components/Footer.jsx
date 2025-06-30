@@ -209,9 +209,9 @@ export default function Footer() {
       {/* Silhouette Section - Ensure it has a z-index to layer correctly above pattern but below content */}
       <div className="absolute inset-0 w-full h-full z-0"> {/* Adjusted z-index for layering, or consider z-10 if pattern is z-0 */}
         <img
-          src="/images/silhouette.png"
+          src="/images/footer.png"
           alt="Nautical silhouette"
-          className="w-full h-full object-cover opacity-40 scale-y-60"
+          className="w-full h-full object-cover opacity-90 scale-y-60"
         />
       </div>
 
@@ -315,7 +315,7 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="border-t border-antique/20 mt-8 pt-8 text-center text-antique/60">
+        <div className=" mt-8 pt-8 text-center text-antique/60">
           <div className="mt-2 space-x-4">
             <Link href="/privacy" className="hover:text-blush transition-colors">
               Privacy Policy

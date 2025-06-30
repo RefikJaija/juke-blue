@@ -370,7 +370,7 @@ export default function MapPage() {
   const bars = [
     {
       id: 1,
-      name: "Felix von Würgrengel Bar",
+      name: "Würgrengel Bar",
       address: "Dresdener Strasse 112, 10999 Berlin",
       coordinates: [52.50541, 13.41872],
       ownerSignatureDrink: "Felix",
@@ -446,7 +446,7 @@ export default function MapPage() {
 
       <div className="w-full max-w-7xl flex flex-col lg:flex-row gap-8 relative z-10">
         {/* Sidebar with bar list */}
-        <div className="w-full lg:w-1/3 bg-nautical p-6 rounded-3xl shadow-xl border-4 border-blush overflow-y-auto max-h-[400px] lg:max-h-[800px] mb-8 lg:mb-0 flex flex-col"> {/* Added flex-col */}
+        <div className="w-full lg:w-1/3 bg-nautical p-6 rounded-3xl shadow-xl border-4 border-antique overflow-y-auto max-h-[400px] lg:max-h-[800px] mb-8 lg:mb-0 flex flex-col"> {/* Added flex-col */}
           <h2 className="font-title text-3xl text-antique text-center mb-6 text-shadow-default">
             Participating Bars
           </h2>
@@ -508,7 +508,7 @@ export default function MapPage() {
         </div>
 
         {/* Map area (dynamically loaded) */}
-        <div className="w-full lg:w-2/3 h-[500px] md:h-[600px] lg:h-[800px] rounded-3xl overflow-hidden shadow-xl border-4 border-nautical flex-grow">
+      <div className="w-full lg:w-2/3 h-[400px] md:h-[500px] lg:h-[600px] rounded-3xl overflow-hidden shadow-xl border-4 border-nautical flex-grow">
           {/* LeafletMap is client-only because of ssr: false */}
           <LeafletMap bars={bars} center={activeBarCenter} zoom={initialZoom} />
         </div>

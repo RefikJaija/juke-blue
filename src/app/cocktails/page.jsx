@@ -598,11 +598,11 @@ export default function GrandCocktailsPage() {
           {cocktails.map((cocktail, index) => (
             <div
               key={index}
-              className="relative bg-antique rounded-3xl shadow-xl border-4 border-nautical p-6 sm:p-8 transform hover:scale-102 hover:-rotate-1 transition-all duration-500 ease-in-out group" // Adjusted padding here
+              className="relative bg-antique rounded-3xl shadow-xl border-4 border-nautical p-6 sm:p-8 transform hover:scale-105 transition-all duration-500 ease-in-out group" // Adjusted padding here
             >
               {/* --- Sand texture overlay --- */}
               <div
-                className="absolute inset-0 bg-grain bg-cover bg-center opacity-20 z-10"
+                className="absolute inset-0 bg-grain bg-cover bg-center opacity-15 z-10"
               ></div>
               {/* --- End Sand texture overlay --- */}
 

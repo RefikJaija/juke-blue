@@ -107,8 +107,10 @@ export default function Navbar() {
           <div className="hidden md:flex space-x-6">
             <a href="/shop" className="text-antique hover:text-blush">SHOP</a>
             <a href="/cocktails" className="text-antique hover:text-blush">COCKTAILS</a>
-            <a href="/songbook" className="text-antique hover:text-blush">SONGBOOK</a>
-            <a href="/map" className="text-antique hover:text-blush">MAP</a>
+            {/* <a href="/songbook" className="text-antique hover:text-blush">SONGBOOK</a> */}
+            <a href="/songbook" className="text-antique hover:text-blush">TUNES</a>
+            {/* <a href="/map" className="text-antique hover:text-blush">MAP</a> */}
+            <a href="/map" className="text-antique hover:text-blush">TAVERNS</a>
           </div>
 
           {/* Mobile menu button */}
