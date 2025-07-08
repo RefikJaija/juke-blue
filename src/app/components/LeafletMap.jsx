@@ -123,7 +123,7 @@ import { useEffect, useRef } from "react"; // Import useRef
 
 // Custom marker icon:
 const jukeBlueMarkerIcon = new L.Icon({
-  iconUrl: "/images/Juke_Blue_Blush.png", // Path to your Juke logo
+  iconUrl: "/images/Juke_Blue_Blush.jpeg", // Path to your Juke logo
   iconSize: [40, 40], // Adjust size if your logo is too big/small
   iconAnchor: [20, 40], // Point of the icon which will correspond to marker's location (bottom-center)
   popupAnchor: [0, -40], // Point from which the popup should open relative to the iconAnchor

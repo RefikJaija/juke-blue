@@ -500,7 +500,7 @@ export default function GrandCocktailsPage() {
       name: "Borrowed Time",
       tagline: "A fleeting moment of refreshing.",
       image: {
-        src: "/images/borrowed-time.png", // Remember to place your images here
+        src: "/images/borrowed-time.jpeg", // Remember to place your images here
         alt: "A vibrant blue cocktail with a lemon slice and a splash of pineapple juice, evoking a tropical lagoon."
       },
       ingredients: [
@@ -521,7 +521,7 @@ export default function GrandCocktailsPage() {
       name: "The Pelican",
       tagline: "A wise bird's secret, rich and tart.",
       image: {
-        src: "/images/the-pelican.png", // Remember to place your images here
+        src: "/images/the-pelican.jpeg", // Remember to place your images here
         alt: "A deep reddish-orange cocktail with visible muddled cherries at the bottom, garnished with an orange peel."
       },
       ingredients: [
@@ -544,7 +544,7 @@ export default function GrandCocktailsPage() {
       name: "5 AM",
       tagline: "The tranquil calm before the storm.",
       image: {
-        src: "/images/5-am.png", // Remember to place your images here
+        src: "/images/5-am.jpeg", // Remember to place your images here
         alt: "A clear, serene cocktail with fresh sprigs of rosemary, lavender, and sage, suggesting a morning mist."
       },
       ingredients: [
@@ -570,7 +570,7 @@ export default function GrandCocktailsPage() {
       <div className="relative w-full max-w-[1300px] mx-auto mb-32 mt-36 aspect-[1.6/1] lg:aspect-[1.9/1]">{/* Frame container */}
         {/* The frame image as a background */}
         <Image
-          src="/images/frame-cocktail.png" // Verify this path!
+          src="/images/frame-cocktail.jpeg" // Verify this path!
           alt="Decorative frame for title"
           layout="fill"
           objectFit="contain"

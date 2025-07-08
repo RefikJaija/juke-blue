@@ -12,6 +12,8 @@ module.exports = {
         nautical: "#25394B",
         antique:  "#F2E3C0", // This existing color will be used for text brightening on hover
         blush:    "#C68CAF", // Your current text color
+        'blush-darker': '#B07B9E', // 
+        'antique-medium': '#E0D0AB', // 
       },
       boxShadow: {
         lg: '0 10px 15px -3px rgba(10,46,66,0.1), 0 4px 6px -2px rgba(10,46,66,0.05)',
@@ -22,7 +24,7 @@ module.exports = {
       },
       backgroundImage: {
         grain:   "url('/images/sand.jpeg')",
-        backgroundImage: "url('/images/vector-background.png')",
+        backgroundImage: "url('/images/vector-background.jpeg')",
       },
       // --- NEW: Define custom text shadows using existing colors or neutral white ---
       textShadow: {

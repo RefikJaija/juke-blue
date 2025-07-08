@@ -209,7 +209,7 @@ export default function Footer() {
       {/* Silhouette Section - Ensure it has a z-index to layer correctly above pattern but below content */}
       <div className="absolute inset-0 w-full h-full z-0"> {/* Adjusted z-index for layering, or consider z-10 if pattern is z-0 */}
         <img
-          src="/images/footer.png"
+          src="/images/footer.jpeg"
           alt="Nautical silhouette"
           className="w-full h-full object-cover opacity-90 scale-y-60"
         />

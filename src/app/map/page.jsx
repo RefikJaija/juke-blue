@@ -374,7 +374,7 @@ export default function MapPage() {
       address: "Dresdener Strasse 112, 10999 Berlin",
       coordinates: [52.50541, 13.41872],
       ownerSignatureDrink: "Felix",
-      image: "/images/felix-bar.png"
+      image: "/images/felix-bar.jpeg"
     },
     {
       id: 2,
@@ -382,7 +382,7 @@ export default function MapPage() {
       address: "Oranienstrasse 39, 10999 Berlin",
       coordinates: [52.50293, 13.41521],
       ownerSignatureDrink: "Gabriel",
-      image: "/images/nachtvogel-bar.png"
+      image: "/images/nachtvogel-bar.jpeg"
     }
     // ...add more bars if needed to test pagination
   ];
@@ -430,7 +430,7 @@ export default function MapPage() {
       <div className="relative w-full max-w-[1200px] mx-auto mb-32 mt-28 aspect-[1.6/1] lg:aspect-[1.9/1]">{/* Frame container */}
         {/* The frame image as a background */}
         <Image
-          src="/images/frame-map.png" // Verify this path!
+          src="/images/frame-map.jpeg" // Verify this path!
           alt="Decorative frame for title"
           layout="fill"
           objectFit="contain"

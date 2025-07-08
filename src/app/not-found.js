@@ -8,7 +8,7 @@ export default function NotFound() {
       {/* Mermaid Illustration */}
       <div className="relative w-64 h-64 mb-8">
         <Image
-          src="/images/mermaid.png"
+          src="/images/mermaid.jpeg"
           alt="Mermaid in uncharted waters"
           fill
           className="object-contain"

@@ -272,25 +272,25 @@ const links = [
   {
     title: "SHOP",
     path: "/shop",
-    image: "/images/shop.png",
+    image: "/images/shop.jpeg",
     
   },
   {
     title: "COCKTAILS",
     path: "/cocktails",
-    image: "/images/cocktail.png",
+    image: "/images/cocktail.jpeg",
     
   },
   {
     title: "TUNES",
     path: "/songbook",
-    image: "/images/tunes.png",
+    image: "/images/tunes.jpeg",
     
   },
   {
     title: "TAVERNS",
     path: "/map",
-    image: "/images/taverns.png",
+    image: "/images/taverns.jpeg",
     
   }
 ];
