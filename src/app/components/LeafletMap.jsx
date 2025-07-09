@@ -123,7 +123,7 @@ import { useEffect, useRef } from "react"; // Import useRef
 
 // Custom marker icon:
 const jukeBlueMarkerIcon = new L.Icon({
-  iconUrl: "/images/Juke_Blue_Blush.jpeg", // Path to your Juke logo
+  iconUrl: "/images/Juke_Blue_Nautical.jpeg", // Path to your Juke logo
   iconSize: [40, 40], // Adjust size if your logo is too big/small
   iconAnchor: [20, 40], // Point of the icon which will correspond to marker's location (bottom-center)
   popupAnchor: [0, -40], // Point from which the popup should open relative to the iconAnchor
@@ -170,10 +170,17 @@ export default function LeafletMap({ bars, center, zoom }) {
       scrollWheelZoom // Allows zooming with scroll wheel
       className="w-full h-full"
     >
-      <TileLayer
+      {/* <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://stadiamaps.com/">Stadia Maps</a>'
         url="https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png" // Light theme
-      />
+      /> */}
+              // In LeafletMap.jsx
+        <TileLayer
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
+
+
       {bars.map((bar) => (
         <Marker
           key={bar.id}
