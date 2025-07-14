@@ -93,17 +93,17 @@ export default function LeafletMap({ bars, center, zoom }) {
             // autoPan: true is often the default, but explicitly setting it can't hurt.
             autoPan={true}
           >
-            <div className="font-sans text-nautical p-2">
-              {bar.image && (
-                <div className="w-full h-32 relative mb-3 rounded-lg overflow-hidden">
-                  <Image
-                    src={bar.image}
-                    alt={bar.name}
-                    layout="fill"
-                    objectFit="cover"
-                    className="rounded-lg"
-                  />
-                </div>
+            <div className="font-sans text-nautical p-2 max-w-full sm:max-w-none mx-auto">
+                {bar.image && (
+                  <div className="w-full h-24 max-[400px]:h-20 sm:h-40 md:h-48 relative mb-3 rounded-lg overflow-hidden">
+                    <Image
+                      src={bar.image}
+                      alt={bar.name}
+                      layout="fill"
+                      objectFit="cover"
+                      className="rounded-lg"
+                    />
+                  </div>
               )}
               <h3 className="font-title text-xl text-blush mb-1">
                 {bar.name}
