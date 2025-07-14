@@ -75,11 +75,11 @@ export default function Navbar() {
         <a href="/cocktails" className="block text-antique hover:text-blush" onClick={() => setIsOpen(false)}>
           Cocktails
         </a>
-        <a href="/songbook" className="block text-antique hover:text-blush" onClick={() => setIsOpen(false)}>
-          SongBook
+        <a href="/tunes" className="block text-antique hover:text-blush" onClick={() => setIsOpen(false)}>
+          TUNES
         </a>
-        <a href="/map" className="block text-antique hover:text-blush" onClick={() => setIsOpen(false)}>
-          Map
+        <a href="/taverns" className="block text-antique hover:text-blush" onClick={() => setIsOpen(false)}>
+          TAVERNS
         </a>
       </div>
     </>
