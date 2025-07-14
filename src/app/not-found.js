@@ -8,8 +8,8 @@ export default function NotFound() {
       {/* Mermaid Illustration */}
       <div className="relative w-64 h-64 mb-8">
         <Image
-          src="/images/mermaid.jpeg"
-          alt="Mermaid in uncharted waters"
+          src="/images/DoubleBlue.jpeg"
+          alt="Our Double Blue Spirit"
           fill
           className="object-contain"
         />
@@ -21,7 +21,7 @@ export default function NotFound() {
           404: Lost at Sea
         </h1>
         <p className="text-2xl md:text-3xl text-antique mb-8 leading-relaxed">
-          Seems you have drifted into some uncharted waters.<br/>
+          Seems you have drifted into some uncharted waters.
           Why not have a drink?
         </p>
         

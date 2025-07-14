@@ -1,5 +1,10 @@
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+
+
 // 'use client';
 // import React, { useState } from "react";
+// import HeroSection from "@/app/components/HeroSection";
+
 
 // const songBook = [
 //   {
@@ -44,85 +49,21 @@
 //   const [showFullVideo, setShowFullVideo] = useState(false);
 
 //   return (
-//     <section className="pt-32 pb-20 text-nautical" id="songbook-page">
-//       {/* 🎥 Featured Video Section */}
-//       <div className="max-w-8xl mx-auto px-6 mb-32">
-//         <div className="flex flex-col lg:flex-row items-center gap-12">
-          
-//           {/* 📽️ Video with Background Image */}
-//           <div className="w-full lg:w-3/4 relative">
-//             {/* Decorative Image behind video, lower & right */}
-//             <img
-//               src="/images/vinyl.png"
-//               alt="Decorative Vinyl"
-//               className="hidden absolute md:block z-0 w-64 opacity-70 pointer-events-none"
-//               style={{
-//                   width: '1000px',
-//                   height: '700px',
-//                 bottom: '-140px',
-//                 right: '-90px',
-//                 top: '-70px',
-//               }}
-//             />
+//     <>
+//      {/* Hero Section */}
+      
+//       <HeroSection
+//         previewClip="/videos/Too_Young_Preview.mp4"
+//         fullVideo="/videos/Too_Young_2025.mp4"
+//         title="Heavenly Melodies"
+//         description="The 12 heavenly melodies mentioned actually exists and are yours here to enjoy. Buy them on Bandcamp if you want to sing along at your next gathering."
+//         buttonText="See the Juke in Action"
+//       />
+    
+//     <section className="pt-32 pb-20 text-nautical" id="songbook-page">      
 
-//             {/* Video Container above */}
-//             <div className="relative z-10 overflow-hidden shadow-2xl">
-//               {showFullVideo ? (
-//                 <video
-//                   src="/videos/Too_Young_2025.mp4"
-//                   autoPlay
-//                   controls
-//                   className="w-full h-auto object-cover"
-//                 />
-//               ) : (
-//                 <div className="relative">
-//                   <video
-//                     src="/videos/Too_Young_Preview.mp4"
-//                     autoPlay
-//                     loop
-//                     muted
-//                     playsInline
-//                     className="w-full h-auto object-cover"
-//                   />
-//                   <button
-//                     onClick={() => setShowFullVideo(true)}
-//                     className="absolute inset-0 flex items-center justify-center bg-nautical bg-opacity-40 hover:bg-opacity-60 transition-all group"
-//                     aria-label="Play Video"
-//                   >
-//                     <div className="w-24 h-24 rounded-full shadow-xl flex items-center justify-center bg-[linear-gradient(to_top_right,rgba(37,57,75,0.8),rgba(198,140,175,0.6),rgba(242,227,192,0.5))] group-hover:scale-105 transition-transform duration-300">
-//                       <svg
-//                         xmlns="http://www.w3.org/2000/svg"
-//                         className="w-10 h-10 text-blush group-hover:scale-110 transition-transform duration-300"
-//                         fill="currentColor"
-//                         viewBox="0 0 24 24"
-//                       >
-//                         <path d="M8 5v14l11-7z" />
-//                       </svg>
-//                     </div>
-//                   </button>
-//                 </div>
-//               )}
-//             </div>
-//           </div>
 
-//           {/* 📝 Description */}
-//           <div className="w-full lg:w-1/3 text-center lg:text-left">
-//             <h2 className="text-2xl font-title uppercase mb-6 text-nautical leading-tight">
-//               The Heavenly Melodies
-//             </h2>
-//             <p className="text-antique text-lg mb-4">
-//               Yes, they actually exist!
-//               The 12 heavenly melodies from the pilot are yours here to enjoy.
-//               Buy them at Bandcamp if you want to sing along at your next social engagement.
-//             </p>
-//             <p className="text-blush font-semibold uppercase tracking-wide">
-//               Music Video Feature
-//             </p>
-//           </div>
-//         </div>
-//       </div>
-
-//        {/* 🎶 Bandcamp Song List */}
+//       {/* 🎶 Bandcamp Song List */}
 //       <div className="max-w-5xl mx-auto px-6">
 //         {songBook.map((song, index) => {
 //           const isEven = index % 2 === 0;
@@ -154,7 +95,7 @@
 
 //               {/* Bandcamp Embed */}
 //               <div className="md:w-1/2">
-//                 <div className=" overflow-hidden shadow-2xl">
+//                 <div className=" overflow-hidden">
 //                   <iframe
 //                     style={{ border: '0', width: '100%', height: '468px' }}
 //                     src={song.iframeSrc}
@@ -168,13 +109,12 @@
 //         })}
 //       </div>
 //     </section>
+
+//     </>
 //   );
 // };
 
 // export default SongBookPage;
-
-
-//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------//
 
 
 'use client';
@@ -219,9 +159,45 @@ const songBook = [
     iframeSrc: 'https://bandcamp.com/EmbeddedPlayer/track=334099159/size=large/bgcol=333333/linkcol=fe7eaf/tracklist=false/transparent=true/',
     bandcampLink: 'https://jukeblue.bandcamp.com/track/bellissima',
   },
+  {
+  title: 'Dreams and Memories',
+  description: 'A bittersweet haze of wanderlust and quiet yearning. Like walking through tall grass at golden hour with an old love still echoing in your chest. Wistful, warm, and just a little weathered by time.',
+  iframeSrc: 'https://bandcamp.com/EmbeddedPlayer/track=2764549222/size=large/bgcol=333333/linkcol=fe7eaf/tracklist=false/transparent=true/',
+  bandcampLink: 'https://jukeblue.bandcamp.com/track/dreams-and-memories',
+},
+{
+  title: 'Silent Freeways',
+  description: 'A midnight drive through heartbreak and headlights. Smoky vocals ride slow-burning guitar lines like telephone wires in the moonlight. It\'s all neon memories, yellow moons, and the ache of what could’ve been.',
+  iframeSrc: 'https://bandcamp.com/EmbeddedPlayer/track=2581956710/size=large/bgcol=333333/linkcol=fe7eaf/tracklist=false/transparent=true/',
+  bandcampLink: 'https://jukeblue.bandcamp.com/track/silent-freeways',
+},
+{
+  title: 'Freedom',
+  description: 'A foot-stomping ode to restless hearts and tea-sipping wisdom. Part coming-of-age, part road song — it rolls like denim and dust across wide-open skies, chasing truth on two feet and a worn-out guitar.',
+  iframeSrc: 'https://bandcamp.com/EmbeddedPlayer/track=2337143692/size=large/bgcol=333333/linkcol=fe7eaf/tracklist=false/transparent=true/',
+  bandcampLink: 'https://jukeblue.bandcamp.com/track/freedom',
+},
+{
+  title: 'Too Young',
+  description: 'A tender ache wrapped in velvet chords. This one dances between memory and maturity — a bittersweet waltz of what was, what might’ve been, and the love that lingers long after the last goodbye.',
+  iframeSrc: 'https://bandcamp.com/EmbeddedPlayer/track=3205049219/size=large/bgcol=333333/linkcol=fe7eaf/tracklist=false/transparent=true/',
+  bandcampLink: 'https://jukeblue.bandcamp.com/track/too-young',
+},
+{
+  title: 'Do the Pelican',
+  description: 'A sun-baked strut from the beaches of who-knows-where. Half dance craze, half fever dream — it’s all conga-line chaos and flapping joy. Guaranteed to make your shoulders shimmy and your passport question its own existence.',
+  iframeSrc: 'https://bandcamp.com/EmbeddedPlayer/track=2984575013/size=large/bgcol=333333/linkcol=fe7eaf/tracklist=false/transparent=true/',
+  bandcampLink: 'https://jukeblue.bandcamp.com/track/do-the-pelican',
+},
+{
+  title: 'Shadowdance',
+  description: 'A slow waltz through sleepless hours and streetlight ghosts. This one lingers in the spaces between love and silence — where memories flicker like headlights and sorrow learns to sway.',
+  iframeSrc: 'https://bandcamp.com/EmbeddedPlayer/track=1316116703/size=large/bgcol=333333/linkcol=fe7eaf/tracklist=false/transparent=true/',
+  bandcampLink: 'https://jukeblue.bandcamp.com/track/shadowdance',
+},
 ];
 
-const SongBookPage = () => {
+const TunesPage = () => {
   const [showFullVideo, setShowFullVideo] = useState(false);
 
   return (
@@ -229,12 +205,14 @@ const SongBookPage = () => {
      {/* Hero Section */}
       
       <HeroSection
-        previewClip="/videos/Too_Young_Preview.mp4"
-        fullVideo="/videos/Too_Young_2025.mp4"
+        previewClip="https://www.youtube.com/embed/wDXdBQGRkcY"
+        fullVideo="https://www.youtube.com/embed/bHOr2O0oOA8"
         title="Heavenly Melodies"
-        description="Yes, they actually exist! The 12 heavenly melodies from the pilot are yours here to enjoy. Buy them on Bandcamp if you want to sing along at your next social engagement."
-        buttonText="The Heavenly Melodies"
+        description="The 12 heavenly melodies mentioned actually exist and are yours here to enjoy."
+        buttonText="See the Juke in Action"
       />
+
+
     
     <section className="pt-32 pb-20 text-nautical" id="songbook-page">      
 
@@ -271,7 +249,7 @@ const SongBookPage = () => {
 
               {/* Bandcamp Embed */}
               <div className="md:w-1/2">
-                <div className=" overflow-hidden shadow-2xl">
+                <div className=" overflow-hidden">
                   <iframe
                     style={{ border: '0', width: '100%', height: '468px' }}
                     src={song.iframeSrc}
@@ -290,6 +268,6 @@ const SongBookPage = () => {
   );
 };
 
-export default SongBookPage;
+export default TunesPage;
 
 
