@@ -138,7 +138,7 @@ export default function Footer() {
                        </svg>
                    </a>
                 {/* YouTube */}
-                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="hover:text-blush transition-colors">
+                <a href="https://www.youtube.com/@JukeBlue" target="_blank" rel="noopener noreferrer" className="hover:text-blush transition-colors">
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M23.498 6.186a2.949 2.949 0 0 0-2.074-2.087C19.648 3.5 12 3.5 12 3.5s-7.648 0-9.424.599a2.949 2.949 0 0 0-2.074 2.087A30.124 30.124 0 0 0 0 12a30.124 30.124 0 0 0 .502 5.814 2.949 2.949 0 0 0 2.074 2.087C4.352 20.5 12 20.5 12 20.5s7.648 0 9.424-.599a2.949 2.949 0 0 0 2.074-2.087A30.124 30.124 0 0 0 24 12a30.124 30.124 0 0 0-.502-5.814zM9.75 15.02V8.98l6.5 3.02-6.5 3.02z"/>
                   </svg>
