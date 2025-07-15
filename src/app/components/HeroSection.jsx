@@ -437,7 +437,7 @@ export default function HeroSection({
           backgroundImage: 'linear-gradient(to right, #f5e7c4, #d6b97b, #f5e7c4)',
           boxShadow: '0 0 4px 2px rgba(245, 231, 196, 0.3)',
           opacity: 0.8,
-          
+          //bottom: '-3px',
         }}
       />
     </section>
