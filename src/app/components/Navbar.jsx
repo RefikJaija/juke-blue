@@ -70,10 +70,10 @@ export default function Navbar() {
         `}
       >
         <a href="/shop" className="block text-antique hover:text-blush" onClick={() => setIsOpen(false)}>
-          Shop
+          SHOP
         </a>
         <a href="/cocktails" className="block text-antique hover:text-blush" onClick={() => setIsOpen(false)}>
-          Cocktails
+          COCKTAILS
         </a>
         <a href="/tunes" className="block text-antique hover:text-blush" onClick={() => setIsOpen(false)}>
           TUNES

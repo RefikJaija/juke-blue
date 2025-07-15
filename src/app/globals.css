@@ -59,6 +59,8 @@ body.overflow-hidden {
     max-width: 96vw !important;
     margin: 0 !important;
     padding: 0 !important;
+    max-height: 200px !important; /* Makes the content area shorter */
+    overflow-y: auto !important; /* Adds scrollbar if content exceeds max-height */
   }
 
   .leaflet-popup-content h3 {

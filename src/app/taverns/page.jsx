@@ -4,7 +4,7 @@
 
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import { useState, useMemo } from "react"; // Import useMemo
+import { useState, useMemo, useEffect } from "react";
 import Image from 'next/image';
 
 // Dynamically import LeafletMap with no SSR:
@@ -35,7 +35,20 @@ export default function MapPage() {
   ];
 
   const initialCenter = [52.50350, 13.41552]; // Berlin center
-  const initialZoom = 17;
+  const getInitialZoom = () => {
+  if (typeof window !== "undefined") {
+    if (window.innerWidth < 640) return 15; // mobile (tailwind 'sm' breakpoint)
+    if (window.innerWidth < 1024) return 16; // tablet
+  }
+    return 17; // default for desktop
+  };
+
+  const [initialZoom, setInitialZoom] = useState(17);
+
+  useEffect(() => {
+    setInitialZoom(getInitialZoom());
+  }, []);
+
 
   const [activeBarCenter, setActiveBarCenter] = useState(initialCenter);
 
