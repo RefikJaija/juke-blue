@@ -158,10 +158,10 @@ export default function Footer() {
         <div className=" mt-8 pt-8 text-center text-antique/60">
           <div className="mt-2 space-x-4">
             <Link href="/privacy" className="hover:text-blush transition-colors">
-              Privacy Policy<sup>DE</sup>
+              Privacy Policy(DE)
             </Link>
             <Link href="/terms" className="hover:text-blush transition-colors">
-              Terms of Service<sup>DE</sup>
+              Terms of Service(DE)
             </Link>
           </div>
         </div>
