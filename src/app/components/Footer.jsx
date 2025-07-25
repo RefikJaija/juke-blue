@@ -155,13 +155,13 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className=" mt-8 pt-8 text-center text-antique/60">
-          <div className="mt-2 space-x-4">
+       <div className="mt-8 pt-8 text-center text-antique/60">
+          <div className="mt-2 space-y-2 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row justify-center items-center">
             <Link href="/privacy" className="hover:text-blush transition-colors">
-              Privacy Policy(DE)
+              Privacy Policy (DE)
             </Link>
             <Link href="/terms" className="hover:text-blush transition-colors">
-              Terms of Service(DE)
+              Terms of Service (DE)
             </Link>
           </div>
         </div>

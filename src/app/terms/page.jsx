@@ -1,11 +1,11 @@
 // src/app/terms/page.js
 export default function TermsOfService() {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-16">
-      <h1 className="font-title text-4xl text-nautical mb-8 mt-32">
+    <div className="max-w-4xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+      <h1 className="font-title text-3xl sm:text-4xl text-nautical mb-6 sm:mb-8 mt-16 sm:mt-32 text-center sm:text-left">
         Allgemeine Geschäftsbedingungen mit Kundeninformationen
       </h1>
-      <div className="prose prose-lg text-antique">
+      <div className="prose prose-lg text-antique break-words">
         <p>
           (Die nachstehenden AGB enthalten zugleich gesetzliche Informationen zu
           Ihren Rechten nach den Vorschriften über Verträge im Fernabsatz und im

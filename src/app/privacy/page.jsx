@@ -1,11 +1,11 @@
 // src/app/privacy/page.js
 export default function PrivacyPolicy() {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-16">
-      <h1 className="font-title text-4xl text-nautical mb-8 mt-32">
+    <div className="max-w-4xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+      <h1 className="font-title text-3xl sm:text-4xl text-nautical mb-6 sm:mb-8 mt-16 sm:mt-32 text-center sm:text-left">
         Datenschutzerklärung
       </h1>
-      <div className="prose prose-lg text-antique">
+      <div className="prose prose-lg text-antique break-words">
         <p>
           Soweit nachstehend keine anderen Angaben gemacht werden, ist die
           Bereitstellung Ihrer personenbezogenen Daten weder gesetzlich oder
@@ -261,7 +261,7 @@ export default function PrivacyPolicy() {
           wie Sie die Cookies bei den wichtigsten Browsern verwalten (u.a. auch
           deaktivieren) können:
         </p>
-        <ul>
+        <ul className="list-disc pl-5">
           <li>Chrome: <a href="https://support.google.com/accounts/answer/61416?hl=de" target="_blank" rel="noopener noreferrer">https://support.google.com/accounts/answer/61416?hl=de</a></li>
           <li>Internet Explorer: <a href="https://support.microsoft.com/de-de/help/17442/windows-internet-explorer-delete-manage-cookies" target="_blank" rel="noopener noreferrer">https://support.microsoft.com/de-de/help/17442/windows-internet-explorer-delete-manage-cookies</a></li>
           <li>Mozilla Firefox: <a href="https://support.mozilla.org/de/kb/cookies-erlauben-und-ablehnen" target="_blank" rel="noopener noreferrer">https://support.mozilla.org/de/kb/cookies-erlauben-und-ablehnen</a></li>
@@ -400,91 +400,32 @@ export default function PrivacyPolicy() {
         <h3>Verwendung des Facebook Pixel</h3>
         <p>
           Wir verwenden auf unserer Website die Remarketing-Funktion „Custom Audiences“ der Facebook Ireland Limited (4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Irland "Facebook").
-            Facebook Ireland und wir sind gemeinsam Verantwortliche für die bei Einbindung des Dienstes stattfindende Erhebung Ihrer Daten und Übermittlung dieser Daten an Facebook. Grundlage dafür ist eine Vereinbarung zwischen uns und Facebook Ireland über die gemeinsame Verarbeitung personenbezogener Daten, in der die jeweiligen Verantwortlichkeiten festgelegt werden. Die Vereinbarung ist unter https://www.facebook.com/legal/controller_addendum aufrufbar. Danach sind wir insbesondere verantwortlich für die Erfüllung der Informationspflichten gemäß der Art. 13, 14 DSGVO, für die Einhaltung der Sicherheitsvorgaben des Art. 32 DSGVO im Hinblick auf die korrekte technische Implementierung und Konfiguration des Dienstes sowie zur Einhaltung der Verpflichtungen nach den Art. 33, 34 DSGVO, soweit eine Verletzung des Schutzes personenbezogener Daten unsere Verpflichtungen gemäß der Vereinbarung über die gemeinsame Verarbeitung betrifft. Facebook Ireland obliegt die Verantwortung, die Betroffenenrechte gemäß den Art. 15 - 20 DSGVO zu ermöglichen, die Sicherheitsvorgaben des Art. 32 DSGVO im Hinblick auf die Sicherheit des Dienstes einzuhalten und die Verpflichtungen nach den Art. 33, 34 DSGVO, soweit eine Verletzung des Schutzes personenbezogener Daten die Verpflichtungen von Facebook Ireland gemäß der Vereinbarung über die gemeinsame Verarbeitung betrifft.
-            Die Anwendung dient dem Zweck die Besucher der Website zielgerichtet mit interessenbezogener Werbung im sozialen Netzwerk Facebook anzusprechen. Dazu wurde auf der Website das Remarketing-Tag von Facebook implementiert. Über dieses Tag wird beim Besuch der Website eine direkte Verbindung zu den Facebook-Servern hergestellt. Hierdurch wird an den Facebook-Server übermittelt, welche unserer Seiten Sie besucht haben. Facebook ordnet diese Information Ihrem persönlichen Facebook-Benutzerkonto zu. Wenn Sie das soziale Netzwerk Facebook besuchen, werden Ihnen dann personalisierte, interessenbezogene Facebook-Ads angezeigt. Ihre Daten werden gegebenenfalls in die USA übermittelt. Für die USA ist kein Angemessenheitsbeschluss der EU-Kommission vorhanden. Die Datenübermittlung erfolgt u.a auf Grundlage von Standardvertragsklauseln als geeignete Garantien für den Schutz der personenbezogenen Daten, einsehbar unter: https://www.facebook.com/legal/EU_data_transfer_addendum.
-            Die Nutzung von Cookies oder vergleichbarer Technologien erfolgt mit Ihrer Einwilligung auf Grundlage des § 15 Abs. 3 S. 1 TMG i.V.m. Art. 6 Abs. 1 lit. a DSGVO. Die Verarbeitung Ihrer personenbezogenen Daten erfolgt mit Ihrer Einwilligung auf Grundlage des Art. 6 Abs. 1 lit. a DSGVO. Sie können die Einwilligung jederzeit widerrufen, ohne dass die Rechtmäßigkeit der aufgrund der Einwilligung bis zum Widerruf erfolgten Verarbeitung berührt wird.
-            Nähere Informationen zur Erhebung und Nutzung der Daten durch Facebook, über Ihre diesbezüglichen Rechte und Möglichkeiten zum Schutz Ihrer Privatsphäre finden Sie in den Datenschutzhinweisen von Facebook unter https://www.facebook.com/about/privacy/.
-            
+          Facebook Ireland und wir sind gemeinsam Verantwortliche für die bei Einbindung des Dienstes stattfindende Erhebung Ihrer Daten und Übermittlung dieser Daten an Facebook. Grundlage dafür ist eine Vereinbarung zwischen uns und Facebook Ireland über die gemeinsame Verarbeitung personenbezogener Daten, in der die jeweiligen Verantwortlichkeiten festgelegt werden. Die Vereinbarung ist unter https://www.facebook.com/legal/controller_addendum aufrufbar. Danach sind wir insbesondere verantwortlich für die Erfüllung der Informationspflichten gemäß der Art. 13, 14 DSGVO, für die Einhaltung der Sicherheitsvorgaben des Art. 32 DSGVO im Hinblick auf die korrekte technische Implementierung und Konfiguration des Dienstes sowie zur Einhaltung der Verpflichtungen nach den Art. 33, 34 DSGVO, soweit eine Verletzung des Schutzes personenbezogener Daten unsere Verpflichtungen gemäß der Vereinbarung über die gemeinsame Verarbeitung betrifft. Facebook Ireland obliegt die Verantwortung, die Betroffenenrechte gemäß den Art. 15 - 20 DSGVO zu ermöglichen, die Sicherheitsvorgaben des Art. 32 DSGVO im Hinblick auf die Sicherheit des Dienstes einzuhalten und die Verpflichtungen nach den Art. 33, 34 DSGVO, soweit eine Verletzung des Schutzes personenbezogener Daten die Verpflichtungen von Facebook Ireland gemäß der Vereinbarung über die gemeinsame Verarbeitung betrifft.
+          Die Anwendung dient dem Zweck die Besucher der Website zielgerichtet mit interessenbezogener Werbung im sozialen Netzwerk Facebook anzusprechen. Dazu wurde auf der Website das Remarketing-Tag von Facebook implementiert. Über dieses Tag wird beim Besuch der Website eine direkte Verbindung zu den Facebook-Servern hergestellt. Hierdurch wird an den Facebook-Server übermittelt, welche unserer Seiten Sie besucht haben. Facebook ordnet diese Information Ihrem persönlichen Facebook-Benutzerkonto zu. Wenn Sie das soziale Netzwerk Facebook besuchen, werden Ihnen dann personalisierte, interessenbezogene Facebook-Ads angezeigt. Ihre Daten werden gegebenenfalls in die USA übermittelt. Für die USA ist kein Angemessenheitsbeschluss der EU-Kommission vorhanden. Die Datenübermittlung erfolgt u.a auf Grundlage von Standardvertragsklauseln als geeignete Garantien für den Schutz der personenbezogenen Daten, einsehbar unter: https://www.facebook.com/legal/EU_data_transfer_addendum.
+          Die Nutzung von Cookies oder vergleichbarer Technologien erfolgt mit Ihrer Einwilligung auf Grundlage des § 15 Abs. 3 S. 1 TMG i.V.m. Art. 6 Abs. 1 lit. a DSGVO. Die Verarbeitung Ihrer personenbezogenen Daten erfolgt mit Ihrer Einwilligung auf Grundlage des Art. 6 Abs. 1 lit. a DSGVO. Sie können die Einwilligung jederzeit widerrufen, ohne dass die Rechtmäßigkeit der aufgrund der Einwilligung bis zum Widerruf erfolgten Verarbeitung berührt wird.
+          Nähere Informationen zur Erhebung und Nutzung der Daten durch Facebook, über Ihre diesbezüglichen Rechte und Möglichkeiten zum Schutz Ihrer Privatsphäre finden Sie in den Datenschutzhinweisen von Facebook unter https://www.facebook.com/about/privacy/.
         </p>
 
         <h3>Verwendung des Google Tag Managers</h3>
         <p>
           Wir verwenden auf unserer Website den Google Tag Manager der Google LLC. (1600 Amphitheatre Parkway, Mountain View, CA 94043, USA; „Google“). Soweit Sie Ihren gewöhnlichen Aufenthalt im Europäischen Wirtschaftsraum oder der Schweiz haben, ist Google Ireland Limited (Gordon House, Barrow Street, Dublin 4, Irland) der für Ihre Daten zuständige Verantwortliche. Google Ireland Limited ist demnach das mit Google verbundene Unternehmen, welches für die Verarbeitung Ihrer Daten und die Einhaltung der anwendbaren Datenschutzgesetze verantwortlich ist.
-            Mit dieser Anwendung werden JavaScript-Tags und HTML-Tags verwaltet, die zur Implementierung insbesondere von Tracking- und Analyse-Tools verwendet werden. Die Datenverarbeitung dient dem Zweck der bedarfsgerechten Gestaltung und der Optimierung unserer Website.
-            Der Google Tag Manager selbst speichert weder Cookies noch werden hierdurch personenbezogene Daten verarbeitet. Er ermöglicht jedoch die Auslösung weiterer Tags, die personenbezogene Daten erheben und verarbeiten können.
-            Nähere Informationen zu Nutzungsbedingungen und Datenschutz finden Sie hier.
+          Mit dieser Anwendung werden JavaScript-Tags und HTML-Tags verwaltet, die zur Implementierung insbesondere von Tracking- und Analyse-Tools verwendet werden. Die Datenverarbeitung dient dem Zweck der bedarfsgerechten Gestaltung und der Optimierung unserer Website.
+          Der Google Tag Manager selbst speichert weder Cookies noch werden hierdurch personenbezogene Daten verarbeitet. Er ermöglicht jedoch die Auslösung weiterer Tags, die personenbezogene Daten erheben und verarbeiten können.
+          Nähere Informationen zu Nutzungsbedingungen und Datenschutz finden Sie hier.
         </p>
 
         <h3>Verwendung von Social Plug-ins</h3>
         <p>
           Wir verwenden auf unserer Website Plug-ins sozialer Netzwerke. Die Einbindung von Social Plug-ins und die dabei stattfindende Datenverarbeitung dient dem Zweck der Optimierung der Werbung für unsere Produkte.
-            Bei der Einbindung von Social Plug-ins wird eine Verknüpfung zwischen Ihrem Computer und den Servern der Anbieter des sozialen Netzwerkes hergestellt und dabei das Plug-in durch Mitteilung an Ihren Browser auf der Seite dargestellt, sofern Sie dem ausdrücklich zugestimmt haben. Hierbei werden sowohl Ihre IP-Adresse als auch die Information, welche unserer Seiten Sie besucht haben, an die Anbieter-Server übermittelt. Dies gilt unabhängig davon, ob Sie bei dem Sozialen Netzwerk registriert bzw. eingeloggt sind. Auch bei nicht registrierten bzw. nicht eingeloggten Nutzern findet eine Übermittlung statt. Sollten Sie gleichzeitig mit einem oder mehrerer Ihrer sozialen Netzwerk Konten verbunden sein, können die gesammelten Informationen auch Ihren entsprechenden Profilen zugeordnet werden. Bei der Nutzung der Plug-in-Funktionen (z.B. durch Betätigen des Buttons) werden auch diese Informationen Ihrem Benutzerkonto zugeordnet. Diese Zuordnung können Sie dadurch verhindern, dass Sie sich vor dem Besuch unserer Website und vor Aktivierung der Schaltflächen aus Ihren Social Media Konten ausloggen.
-            Die Nutzung von Cookies oder vergleichbarer Technologien erfolgt mit Ihrer Einwilligung auf Grundlage des § 15 Abs. 3 S. 1 TMG i.V.m. Art. 6 Abs. 1 lit. a DSGVO. Die Verarbeitung Ihrer personenbezogenen Daten erfolgt mit Ihrer Einwilligung auf Grundlage des Art. 6 Abs. 1 lit. a DSGVO. Sie können die Einwilligung jederzeit widerrufen, ohne dass die Rechtmäßigkeit der aufgrund der Einwilligung bis zum Widerruf erfolgten Verarbeitung berührt wird.
-            Nachstehend benannte soziale Netzwerke sind mittels Social Plug-in auf unserer Website eingebunden. Nähere Informationen zu Umfang und Zweck der Erhebung und Nutzung der Daten sowie über Ihre diesbezüglichen Rechte und Möglichkeiten zum Schutz Ihrer Privatsphäre finden Sie in den verlinkten Datenschutzhinweisen der Anbieter.
-
-            Facebook der Facebook Ireland Limited (4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Irland)
-            Facebook Ireland und wir sind gemeinsam Verantwortliche für die bei Einbindung des Dienstes stattfindende Erhebung Ihrer Daten und Übermittlung dieser Daten an Facebook. Grundlage dafür ist eine Vereinbarung zwischen uns und Facebook Ireland über die gemeinsame Verarbeitung personenbezogener Daten, in der die jeweiligen Verantwortlichkeiten festgelegt werden. Die Vereinbarung ist unter https://www.facebook.com/legal/controller_addendum aufrufbar. Danach sind wir insbesondere verantwortlich für die Erfüllung der Informationspflichten gemäß der Art. 13, 14 DSGVO, für die Einhaltung der Sicherheitsvorgaben des Art. 32 DSGVO im Hinblick auf die korrekte technische Implementierung und Konfiguration des Dienstes sowie zur Einhaltung der Verpflichtungen nach den Art. 33, 34 DSGVO, soweit eine Verletzung des Schutzes personenbezogener Daten unsere Verpflichtungen gemäß der Vereinbarung über die gemeinsame Verarbeitung betrifft. Facebook Ireland obliegt die Verantwortung, die Betroffenenrechte gemäß den Art. 15 - 20 DSGVO zu ermöglichen, die Sicherheitsvorgaben des Art. 32 DSGVO im Hinblick auf die Sicherheit des Dienstes einzuhalten und die Verpflichtungen nach den Art. 33, 34 DSGVO, soweit eine Verletzung des Schutzes personenbezogener Daten die Verpflichtungen von Facebook Ireland gemäß der Vereinbarung über die gemeinsame Verarbeitung betrifft.
-            Ihre Daten werden gegebenenfalls in die USA übermittelt. Für die USA ist kein Angemessenheitsbeschluss der EU-Kommission vorhanden. Die Datenübermittlung erfolgt u.a auf Grundlage von Standardvertragsklauseln als geeignete Garantien für den Schutz der personenbezogenen Daten, einsehbar unter: https://www.facebook.com/legal/EU_data_transfer_addendum.
-            Nähere Informationen zur Erhebung und Nutzung der Daten durch Facebook, über Ihre diesbezüglichen Rechte und Möglichkeiten zum Schutz Ihrer Privatsphäre finden Sie in den Datenschutzhinweisen von Facebook unter https://www.facebook.com/about/privacy/.
-            
-            Instagram der Instagram LLC. (1601 Willow Road, Menlo Park, CA 94025, USA)
-            https://help.instagram.com/155833707900388
-            Ihre Daten werden gegebenenfalls in die USA übermittelt. Für die USA ist kein Angemessenheitsbeschluss der EU-Kommission vorhanden. Die Datenübermittlung erfolgt u.a auf Grundlage von Standardvertragsklauseln als geeignete Garantien für den Schutz der personenbezogenen Daten, einsehbar unter: https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/standard-contractual-clauses-scc_de. 
+          Bei der Einbindung von Social Plug-ins wird eine Verknüpfung zwischen Ihrem Computer und den Servern der Anbieter des sozialen Netzwerkes hergestellt und dabei das Plug-in durch Mitteilung an Ihren Browser auf der Seite dargestellt, sofern Sie dem ausdrücklich zugestimmt haben. Hierbei werden sowohl Ihre IP-Adresse als auch die Information, welche unserer Seiten Sie besucht haben, an die Anbieter-Server übermittelt. Dies gilt unabhängig davon, ob Sie bei dem Sozialen Netzwerk registriert bzw. eingeloggt sind. Auch bei nicht registrierten bzw. nicht eingeloggten Nutzern findet eine Übermittlung statt. Sollten Sie gleichzeitig mit einem oder mehrerer Ihrer sozialen Netzwerk Konten verbunden sein, können die gesammelten Informationen auch Ihren entsprechenden Profilen zugeordnet werden. Bei der Nutzung der Plug-in-Funktionen (z.B. durch Betätigen des Buttons) werden auch diese Informationen Ihrem Benutzerkonto zugeordnet. Diese Zuordnung können Sie dadurch verhindern, dass Sie sich vor dem Besuch unserer Website und vor Aktivierung der Schaltflächen aus Ihren Social Media Konten ausloggen.
+          Die Nutzung von Cookies oder vergleichbarer Technologien erfolgt mit Ihrer Einwilligung auf Grundlage des § 15 Abs. 3 S. 1 TMG i.V.m. Art. 6 Abs. 1 lit. a DSGVO. Die Verarbeitung Ihrer personenbezogenen Daten erfolgt mit Ihrer Einwilligung auf Grundlage des Art. 6 Abs. 1 lit. a DSGVO. Sie können die Einwilligung jederzeit widerrufen, ohne dass die Rechtmäßigkeit der aufgrund der Einwilligung bis zum Widerruf erfolgten Verarbeitung berührt wird.
+          Nachstehend benannte soziale Netzwerke sind mittels Social Plug-in auf unserer Website eingebunden. Nähere Informationen zu Umfang und Zweck der Erhebung und Nutzung der Daten sowie über Ihre diesbezüglichen Rechte und Möglichkeiten zum Schutz Ihrer Privatsphäre finden Sie in den verlinkten Datenschutzhinweisen der Anbieter.
         </p>
-
-        <h3>Verwendung von Cloudflare</h3>
         <p>
-          Wir verwenden auf unserer Website das Content Delivery Network Cloudflare CDN der Cloudflare Inc. (101 Townsend St, San Francisco, CA 94107, USA; “Cloudflare”). Dabei handelt es sich um ein überregionales Netz von Servern in verschiedenen Rechenzentren, mit denen sich unser Webserver verbindet und über die bestimmte Inhalte unserer Webseite ausgeliefert werden.
-            Die Datenverarbeitung dient dem Zweck, die Ladezeiten unserer Webseite zu optimieren und unser Angebot damit nutzerfreundlicher zu gestalten.
-            Dabei können unter anderem folgende Informationen erhoben werden: IP-Adresse, Systemkonfigurationsinformationen, Informationen über den Traffic von und zu Kundenwebsites (sog. Server-Logfiles). 
-            Ihre Daten werden gegebenenfalls in die USA übermittelt. Für die USA ist kein Angemessenheitsbeschluss der EU-Kommission vorhanden. Die Datenübermittlung erfolgt u.a auf Grundlage von Standardvertragsklauseln als geeignete Garantien für den Schutz der personenbezogenen Daten, einsehbar unter: https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection/standard-contractual-clauses-scc_de.
-            Die Verarbeitung erfolgt auf Grundlage des Art. 6 Abs. 1 lit. f DSGVO aus dem berechtigten Interesse an der bedarfsgerechten und zielgerichteten Gestaltung der Website. Sie haben das Recht aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit dieser auf Art. 6 Abs. 1 lit. f DSGVO beruhenden Verarbeitungen Sie betreffender personenbezogener Daten zu widersprechen.
-            Nähere Informationen zum Datenschutz bei der Verwendung von Cloudflare finden Sie unter https://www.cloudflare.com/de-de/privacypolicy/.
-            
+          Facebook der Facebook Ireland Limited (4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Irland)
+          Facebook Ireland und wir sind gemeinsam Verantwortliche für die bei Einbindung des Dienstes stattfindende Erhebung Ihrer Daten und Übermittlung dieser Daten an Facebook. Grundlage dafür ist eine Vereinbarung zwischen uns und Facebook Ireland über die gemeinsame Verarbeitung personenbezogener Daten, in der die jeweiligen Verantwortlichkeiten festgelegt werden. Die Vereinbarung ist unter https://www.facebook.com/legal/controller_addendum aufrufbar. Danach sind wir insbesondere verantwortlich für die Erfüllung der Informationspflichten gemäß der Art. 13, 14 DSGVO, für die Einhaltung der Sicherheitsvorgaben des Art. 32 DSGVO im Hinblick auf die korrekte technische Implementierung und Konfiguration des Dienstes sowie zur Einhaltung der Verpflichtungen nach den Art. 33, 34 DSGVO, soweit eine Verletzung des Schutzes personenbezogener Daten unsere Verpflichtungen gemäß der Vereinbarung über die gemeinsame Verarbeitung betrifft. Facebook Ireland obliegt die Verantwortung, die Betroffenenrechte gemäß den Art. 15 - 20 DSGVO zu ermöglichen, die Sicherheitsvorgaben des Art. 32 DSGVO im Hinblick auf die Sicherheit des Dienstes einzuhalten und die Verpflichtungen nach den Art. 33, 34 DSGVO, soweit eine Verletzung des Schutzes personenbezogener Daten die Verpflichtungen von Facebook Ireland gemäß der Vereinbarung über die gemeinsame Verarbeitung betrifft.
+          Ihre Daten werden gegebenenfalls in die USA übermittelt. Für die USA ist kein Angemessenheitsbeschluss der EU-Kommission vorhanden. Die Datenübermittlung erfolgt u.a auf Grundlage von Standardvertragsklauseln als geeignete Garantien für den Schutz der personenbezogenen Daten, einsehbar unter: https://www.facebook.com/legal/EU_data_transfer_addendum
         </p>
-
-        <h3>Verwendung von YouTube</h3>
-        <p>
-          Wir verwenden auf unserer Website die Funktion zur Einbettung von YouTube-Videos der Google Ireland Limited (Gordon House, Barrow Street, Dublin 4, Irland; „YouTube“).YouTube ist ein mit der Google LLC (1600 Amphitheatre Parkway, Mountain View, CA 94043, USA; “Google”) verbundenes Unternehmen.
-            Die Funktion zeigt bei YouTube hinterlegte Videos in einem iFrame auf der Website an. Dabei ist die Option „Erweiterter Datenschutzmodus“ aktiviert. Dadurch werden von YouTube keine Informationen über die Besucher der Website gespeichert. Erst wenn Sie sich ein Video ansehen, werden Informationen darüber an YouTube übermittelt und dort gespeichert. Ihre Daten werden gegebenenfalls in die USA übermittelt. Für die USA ist kein Angemessenheitsbeschluss der EU-Kommission vorhanden. Die Datenübermittlung erfolgt u.a auf Grundlage von Standardvertragsklauseln als geeignete Garantien für den Schutz der personenbezogenen Daten, einsehbar unter: https://policies.google.com/privacy/frameworks.
-            Die Nutzung von Cookies oder vergleichbarer Technologien erfolgt mit Ihrer Einwilligung auf Grundlage des § 15 Abs. 3 S. 1 TMG i.V.m. Art. 6 Abs. 1 lit. a DSGVO. Die Verarbeitung Ihrer personenbezogenen Daten erfolgt mit Ihrer Einwilligung auf Grundlage des Art. 6 Abs. 1 lit. a DSGVO. Sie können die Einwilligung jederzeit widerrufen, ohne dass die Rechtmäßigkeit der aufgrund der Einwilligung bis zum Widerruf erfolgten Verarbeitung berührt wird.
-            Nähere Informationen zur Erhebung und Nutzung der Daten durch YouTube und Google, über Ihre diesbezüglichen Rechte und Möglichkeiten zum Schutz Ihrer Privatsphäre finden Sie in den Datenschutzhinweisen von YouTube unter https://www.youtube.com/t/privacy.
-        </p>
-
-        <h3>Verwendung von Google Maps</h3>
-        <p>
-         Diese Seite nutzt über eine API den Kartendienst Google Maps. Anbieter ist die Google Ireland Limited („Google“), Gordon House, Barrow Street, Dublin 4, Irland.
-
-            Zur Nutzung der Funktionen von Google Maps ist es notwendig, Ihre IP-Adresse zu speichern. Diese Informationen werden in der Regel an einen Server von Google in den USA übertragen und dort gespeichert. Der Anbieter dieser Seite hat keinen Einfluss auf diese Datenübertragung.
-
-            Die Nutzung von Google Maps erfolgt im Interesse einer ansprechenden Darstellung unserer Online-Angebote und an einer leichten Auffindbarkeit der von uns auf der Website angegebenen Orte. Dies stellt ein berechtigtes Interesse im Sinne von Art. 6 Abs. 1 lit. f DSGVO dar. Sofern eine entsprechende Einwilligung abgefragt wurde, erfolgt die Verarbeitung ausschließlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO; die Einwilligung ist jederzeit widerrufbar.
-
-            Mehr Informationen zum Umgang mit Nutzerdaten finden Sie in der Datenschutzerklärung von Google: https://policies.google.com/privacy?hl=de.
-        </p>
-
-        <h2>Betroffenenrechte und Speicherdauer</h2>
-        
-        <h3>Dauer der Speicherung</h3>
-        <p>
-         Nach vollständiger Vertragsabwicklung werden die Daten zunächst für die Dauer der Gewährleistungsfrist, danach unter Berücksichtigung gesetzlicher, insbesondere steuer- und handelsrechtlicher Aufbewahrungsfristen gespeichert und dann nach Fristablauf gelöscht, sofern Sie der weitergehenden Verarbeitung und Nutzung nicht zugestimmt haben.
-        </p>
-        <h3>Rechte der betroffenen Person</h3>
-        <p>
-        Ihnen stehen bei Vorliegen der gesetzlichen Voraussetzungen folgende Rechte nach Art. 15 bis 20 DSGVO zu: Recht auf Auskunft, auf Berichtigung, auf Löschung, auf Einschränkung der Verarbeitung, auf Datenübertragbarkeit.
-        Außerdem steht Ihnen nach Art. 21 Abs. 1 DSGVO ein Widerspruchsrecht gegen die Verarbeitungen zu, die auf Art. 6 Abs. 1 f DSGVO beruhen, sowie gegen die Verarbeitung zum Zwecke von Direktwerbung.       
-        </p>
-         <h3>Beschwerderecht bei der Aufsichtsbehörde</h3>
-        <p>
-          Sie haben gemäß Art. 77 DSGVO das Recht, sich bei der Aufsichtsbehörde zu beschweren, wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer personenbezogenen Daten nicht rechtmäßig erfolgt.
-        </p>
-        <h3>Widerspruchsrecht</h3>
-        <p>
-            Beruhen die hier aufgeführten personenbezogenen Datenverarbeitungen auf Grundlage unseres berechtigten Interesses nach Art. 6 Abs. 1 lit. f DSGVO, haben Sie das Recht aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit diesen Verarbeitungen mit Wirkung für die Zukunft zu widersprechen.
-            Nach erfolgtem Widerspruch wird die Verarbeitung der betroffenen Daten beendet, es sei denn, wir können zwingende schutzwürdige Gründe für die Verarbeitung nachweisen, die Ihren Interessen, Rechten und Freiheiten überwiegen, oder wenn die Verarbeitung der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen dient.
-            Zuletzt aktualisiert am 28.02.2021
-        </p>
-
-        
       </div>
     </div>
   );
