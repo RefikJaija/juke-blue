@@ -87,7 +87,7 @@ export default function MapPage() {
     <div className="min-h-screen flex flex-col items-center py-16 px-4 relative">
       <div className="absolute inset-0 bg-grainz bg-cover bg-center opacity-20 z-0" />
       {/* This div is EXCLUSIVELY for the large frame, allowing it to span wider */}
-      <div className="relative w-full max-w-[1200px] mx-auto mb-32 mt-28 aspect-[1.6/1] lg:aspect-[1.9/1]">{/* Frame container */}
+      <div className="relative w-full max-w-[1050px] mx-auto mb-20 mt-24 aspect-[1.6/1] lg:aspect-[1.9/1]">{/* Frame container */}
         {/* The frame image as a background */}
         <Image
           src="/images/frame-map.jpeg" // Verify this path!

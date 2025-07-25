@@ -75,7 +75,7 @@ export default function GrandCocktailsPage() {
     <div className=""> {/* Main page background - this can be full width */}
 
       {/* This div is EXCLUSIVELY for the large frame, allowing it to span wider */}
-      <div className="relative w-full max-w-[1300px] mx-auto mb-32 mt-36 aspect-[1.6/1] lg:aspect-[1.9/1]">{/* Frame container */}
+      <div className="relative w-full max-w-[1100px] mx-auto mt-36 aspect-[1.6/1] lg:aspect-[1.9/1]">{/* Frame container */}
         {/* The frame image as a background */}
         <Image
           src="/images/frame-cocktail.jpeg" // Verify this path!
@@ -88,7 +88,7 @@ export default function GrandCocktailsPage() {
 
         {/* The title text, positioned absolutely over the frame */}
       <h1 className="font-title text-xl sm:text-3xl md:text-4xl lg:text-5xl text-nautical text-center leading-tight absolute inset-0 flex items-center justify-center px-[50px] py-[30px] sm:px-[120px] sm:py-[60px] lg:px-[350px] lg:py-[100px] sm:text-shadow-default z-10">
-          Discover Juke's <br></br> personal creations <br></br> for Double Blue
+          Discover Juke's  personal creations  for Double Blue
         </h1>
       </div>
 
