@@ -421,7 +421,8 @@ export default function HeroSection({
 
             <button
               onClick={() => setShowPlayer(false)}
-              className="absolute top-20 right-10 text-white text-5xl hover:text-blush z-50"
+              className="absolute top-44 sm:top-20 right-6 sm:right-10 text-white text-5xl hover:text-blush z-50"
+
               aria-label="Close"
             >
               ×
