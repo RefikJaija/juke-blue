@@ -99,7 +99,7 @@ export default function MapPage() {
         />
 
         {/* The title text, positioned absolutely over the frame */}
-        <h1 className="font-title text-xl sm:text-3xl md:text-4xl lg:text-5xl text-nautical text-center leading-tight absolute inset-0 flex items-center justify-center px-[50px] py-[30px] sm:px-[120px] sm:py-[60px] lg:px-[350px] lg:py-[100px] sm:text-shadow-default z-10">
+        <h1 className="font-title text-xl sm:text-3xl md:text-4xl lg:text-[37px] text-nautical text-center leading-tight absolute inset-0 flex items-center justify-center px-[50px] py-[30px] sm:px-[120px] sm:py-[60px] lg:px-[350px] lg:py-[100px] sm:text-shadow-default z-10">
           Our Partner Bars
         </h1>
       </div>

@@ -87,8 +87,8 @@ export default function GrandCocktailsPage() {
         />
 
         {/* The title text, positioned absolutely over the frame */}
-      <h1 className="font-title text-xl sm:text-3xl md:text-4xl lg:text-5xl text-nautical text-center leading-tight absolute inset-0 flex items-center justify-center px-[50px] py-[30px] sm:px-[120px] sm:py-[60px] lg:px-[350px] lg:py-[100px] sm:text-shadow-default z-10">
-          Discover Juke's  personal creations  for Double Blue
+      <h1 className="font-title text-xl sm:text-3xl md:text-4xl lg:text-[40px] text-nautical text-center leading-tight absolute inset-0 flex items-center justify-center px-[50px] py-[30px] sm:px-[120px] sm:py-[60px] lg:px-[350px] lg:py-[100px] sm:text-shadow-default z-10">
+          Discover Juke's <br></br> personal creations <br></br> for Double Blue
         </h1>
       </div>
 

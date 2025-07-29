@@ -163,6 +163,10 @@ export default function Footer() {
             <Link href="/terms" className="hover:text-blush transition-colors">
               Terms of Service (DE)
             </Link>
+              {/* Added Payment & Shipping Link */}
+            <Link href="/payment-shipping" className="hover:text-blush transition-colors">
+              Payment & Shipping
+            </Link>
           </div>
         </div>
       </div>
