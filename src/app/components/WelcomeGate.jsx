@@ -96,7 +96,7 @@ export default function WelcomeGate() {
                 }}
                 className="form-checkbox h-5 w-5 accent-blush"
               />
-              <span className="ml-3 text-lg mb-4">I confirm I am over 18 years old</span>
+              <span className="ml-3 text-sm max-[500px]:text-xs sm:text-lg">I confirm I am over 18 years old</span>
             </label>
             {showError && <p className="text-blush italic mb-4">Please confirm your age to proceed.</p>}
             <div className="flex justify-center">

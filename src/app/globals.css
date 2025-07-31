@@ -29,7 +29,7 @@
 }
 
 .prose h2 {
-  @apply font-title text-2xl text-blush mt-8 mb-4;
+  @apply font-title text-2xl text-nautical mt-8 mb-4;
 }
 
 .prose h3 {
@@ -41,7 +41,7 @@
 }
 
 .prose a {
-  @apply text-blush hover:underline;
+  @apply text-nautical hover:underline hover:text-blush;
 }
 
 body.overflow-hidden {
