@@ -72,15 +72,19 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${rye.variable} h-full`}>
       <head>
         {/* 👇 MOVE THE MAILCHIMP SCRIPT HERE, INSIDE THE <head> TAG 👇 */}
-        <Script
+       <Script
           id="mcjs"
-          strategy="afterInteractive"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: `
-              !function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/87333c96265e38890d8578a41/81437feb20fcf0c9f1c993ee9.js");
+              !function(c,h,i,m,p){
+                m=c.createElement(h),p=c.getElementsByTagName(h)[0],
+                m.async=1,m.src=i,p.parentNode.insertBefore(m,p)
+              }(document,"script","https://chimpstatic.com/mcjs-connected/js/users/87333c96265e38890d8578a41/81437feb20fcf0c9f1c993ee9.js");
             `,
           }}
         />
+
       </head>
       <body className="h-full min-h-screen bg-blush relative">
         {/* ... rest of your body content ... */}
