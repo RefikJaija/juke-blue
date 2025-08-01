@@ -60,7 +60,6 @@ import './globals.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import WelcomeGate from './components/WelcomeGate';
-import Script from 'next/script'; 
 
 const rye = Rye({
   weight: '400',
