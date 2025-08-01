@@ -117,7 +117,7 @@
 
 // src/app/layout.js
 import { Rye } from 'next/font/google';
-import Script from 'next/script';
+// We no longer need to import 'Script' from 'next/script'
 import './globals.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -133,19 +133,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${rye.variable} h-full`}>
       <head>
-        {/* ✅ Mailchimp script goes here */}
-        <Script
-          id="mcjs"
-          strategy="beforeInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              !function(c,h,i,m,p){
-                m=c.createElement(h),p=c.getElementsByTagName(h)[0],
-                m.async=1,m.src=i,p.parentNode.insertBefore(m,p)
-              }(document,"script","https://chimpstatic.com/mcjs-connected/js/users/87333c96265e38890d8578a41/81437feb20fcf0c9f1c993ee9.js");
-            `,
-          }}
-        />
+        {/* The Mailchimp script has been removed from here */}
       </head>
       <body className="h-full min-h-screen bg-blush relative">
         <WelcomeGate />
