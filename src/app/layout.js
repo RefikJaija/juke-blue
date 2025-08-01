@@ -60,6 +60,7 @@ import './globals.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import WelcomeGate from './components/WelcomeGate';
+import Script from 'next/script'; 
 
 const rye = Rye({
   weight: '400',
@@ -71,19 +72,18 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${rye.variable} h-full`}>
       <head>
-        {/* 👇 MOVE THE MAILCHIMP SCRIPT HERE, INSIDE THE <head> TAG 👇 */}
        <Script
-        id="mcjs"
-        strategy="beforeInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-            !function(c,h,i,m,p){
-              m=c.createElement(h),p=c.getElementsByTagName(h)[0],
-              m.async=1,m.src=i,p.parentNode.insertBefore(m,p)
-            }(document,"script","https://chimpstatic.com/mcjs-connected/js/users/87333c96265e38890d8578a41/81437feb20fcf0c9f1c993ee9.js");
-          `,
-        }}
-      />
+          id="mcjs"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              !function(c,h,i,m,p){
+                m=c.createElement(h),p=c.getElementsByTagName(h)[0],
+                m.async=1,m.src=i,p.parentNode.insertBefore(m,p)
+              }(document,"script","https://chimpstatic.com/mcjs-connected/js/users/87333c96265e38890d8578a41/81437feb20fcf0c9f1c993ee9.js");
+            `,
+          }}
+        />
 
 
       </head>
