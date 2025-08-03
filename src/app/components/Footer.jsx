@@ -170,9 +170,9 @@ const CustomForm = ({ status, message, onValidated }) => {
           Subscribe
         </button>
       </div>
-      {status === "sending" && <div style={{ color: "white", paddingTop: "10px" }}>Subscribing...</div>}
-      {status === "error" && <div style={{ color: "#FFD700", paddingTop: "10px" }} dangerouslySetInnerHTML={{ __html: message }} />}
-      {status === "success" && <div style={{ color: "white", paddingTop: "10px" }}>Thank you for subscribing!</div>}
+      {status === "sending" && <div style={{ color: "#C68CAF", paddingTop: "10px" }}>Subscribing...</div>}
+      {status === "error" && <div style={{ color: "#F2E3C0", paddingTop: "10px" }} dangerouslySetInnerHTML={{ __html: message }} />}
+      {status === "success" && <div style={{ color: "#C68CAF", paddingTop: "10px" }}>Thank you for subscribing. Check your inbox for the discount code!</div>}
     </div>
   );
 };
@@ -240,7 +240,7 @@ export default function Footer() {
               <li><Link href="/taverns" className="hover:text-blush transition-colors">Find Us</Link></li>
             </ul>
           </div>
-          
+
           {/* Contact */}
           <div>
             <h4 className="font-title text-lg mb-4">Contact</h4>
