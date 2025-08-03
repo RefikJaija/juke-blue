@@ -140,14 +140,14 @@ export default function ShopPage() {
           <div className="flex items-center bg-antique/50 border border-nautical/20 rounded-lg px-3 py-2 text-nautical w-full sm:w-auto justify-center">
             <button
               onClick={handleDecreaseQuantity}
-              className="text-2xl font-bold px-2 hover:text-blush transition-colors"
+              className="text-2xl font-bold px-2 text-nautical hover:text-blush active:text-nautical focus-visible:text-nautical transition-colors"
             >
               -
             </button>
             <span className="text-2xl font-semibold mx-3 w-10 text-center">{quantity}</span>
             <button
               onClick={handleIncreaseQuantity}
-              className="text-2xl font-bold px-2 hover:text-blush transition-colors"
+              className="text-2xl font-bold px-2 text-nautical hover:text-blush active:text-nautical focus-visible:text-nautical transition-colors"
             >
               +
             </button>
@@ -170,11 +170,14 @@ export default function ShopPage() {
         )}
 
         <p className="text-antique/70 text-sm sm:text-base leading-relaxed max-w-md mx-auto lg:mx-0 mb-4 text-left">
-          After selecting your amount and clicking “BUY NOW,” you’ll be taken to our trusted partner distillery’s store to complete your order.
+          After selecting your amount and clicking <br /> “BUY NOW,” you’ll be taken to our trusted partner distillery’s store to complete your order.
         </p>
-        <p className="text-antique/70 text-sm sm:text-base leading-relaxed max-w-md mx-auto lg:mx-0 mb-4 text-left">
-          Shipping typically takes 3-5 working days.
-        </p>
+        <div className="w-full text-left max-w-md mx-auto lg:mx-0">
+          <p className="text-antique/70 text-sm sm:text-base leading-relaxed mb-4">
+            Shipping typically takes 3-5 working days.
+          </p>
+        </div>
+
         <p className="text-antique/70 text-sm sm:text-base leading-relaxed max-w-md mx-auto lg:mx-0 mb-4 text-left">
           We currently only deliver within Germany — if you're based elsewhere, please{" "}
           <a href="mailto:thejuke@jukeblue.com" className="text-nautical underline hover:text-blush transition-colors">

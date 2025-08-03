@@ -89,7 +89,7 @@ const TunesPage = () => {
         previewClip="https://www.youtube.com/embed/wDXdBQGRkcY"
         fullVideo="https://www.youtube.com/embed/bHOr2O0oOA8"
         title="Heavenly Melodies"
-        description="The 12 heavenly melodies mentioned actually exist and are yours here to enjoy."
+        description="Twelve heavenly melodies for you to enjoy."
         buttonText="See the Juke in Action"
       />
 

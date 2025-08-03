@@ -37,7 +37,7 @@ export default function GrandCocktailsPage() {
         "1 shot of Double Blue", // Assumed 'Double Blue' replaces 'Korn' for consistency
         "10 fresh cherries",
         "1 shot of freshly squeezed lemon juice",
-        "10ml simple syrup (or ¼ shot)",
+        "10ml simple syrup",
         "Orange juice"
       ],
       instructions: [
@@ -109,9 +109,9 @@ export default function GrandCocktailsPage() {
               className="relative bg-antique rounded-3xl shadow-xl border-4 border-nautical p-6 sm:p-8 transform hover:scale-105 transition-all duration-500 ease-in-out group" // Adjusted padding here
             >
               {/* --- Sand texture overlay --- */}
-              <div
-                className="absolute inset-0 bg-grain bg-cover bg-center opacity-15 z-10"
-              ></div>
+              {/* <div className="absolute inset-0 bg-grain bg-[length:200px_200px] bg-center opacity-30 rounded-2xl pointer-events-none z-0"></div> */}
+              <div className="absolute inset-0 bg-grain bg-[length:70px_70px] bg-center opacity-30 rounded-2xl pointer-events-none z-0"></div>
+
               {/* --- End Sand texture overlay --- */}
 
               {/* Main content container with higher z-index */}
