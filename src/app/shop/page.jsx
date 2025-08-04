@@ -82,11 +82,14 @@ export default function ShopPage() {
   const isInStock = product.stock_status === 'instock';
 
   return (
-    <div className="min-h-screen pt-24 pb-16 px-6 sm:px-8 max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-8 lg:pt-32">
+    // <div className="min-h-screen pt-24 pb-16 px-6 sm:px-8 max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-8 lg:pt-32">
+    <div className="min-h-screen pt-24 pb-16 px-6 sm:px-8 max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-8 lg:pt-32">
+
       {/* Right Section (Image) */}
       <div className="flex-1 flex justify-center items-center p-4 mt-8 lg:mt-0 w-full">
         {imageUrl ? (
-          <div className="relative w-full max-w-md aspect-[3/4]">
+          // <div className="relative w-full max-w-md aspect-[3/4]">
+          <div className="relative w-full max-w-lg h-[32rem] sm:h-[36rem] md:h-[40rem] lg:h-[48rem] xl:h-[56rem]">
             <Image
               src={imageUrl}
               alt={imageAlt}
