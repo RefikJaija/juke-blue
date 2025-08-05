@@ -86,10 +86,12 @@ export default function ShopPage() {
     <div className="min-h-screen pt-24 pb-16 px-6 sm:px-8 max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-8 lg:pt-32">
 
       {/* Right Section (Image) */}
-      <div className="flex-1 flex justify-center items-center p-4 mt-8 lg:mt-0 w-full">
+      <div className="flex-1 flex justify-center items-center p-4 mt-0 lg:mt-8 w-full">
+
         {imageUrl ? (
           // <div className="relative w-full max-w-md aspect-[3/4]">
-          <div className="relative w-full max-w-lg h-[32rem] sm:h-[36rem] md:h-[40rem] lg:h-[48rem] xl:h-[56rem]">
+          <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl h-[24rem] sm:h-[28rem] md:h-[32rem] lg:h-[44rem] xl:h-[52rem]">
+
             <Image
               src={imageUrl}
               alt={imageAlt}
