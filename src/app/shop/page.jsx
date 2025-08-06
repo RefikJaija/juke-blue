@@ -90,7 +90,7 @@ export default function ShopPage() {
 
         {imageUrl ? (
           // <div className="relative w-full max-w-md aspect-[3/4]">
-          <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl h-[24rem] sm:h-[28rem] md:h-[32rem] lg:h-[44rem] xl:h-[52rem]">
+          <div className="relative w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl h-[28rem] sm:h-[28rem] md:h-[32rem] lg:h-[44rem] xl:h-[52rem]">
 
             <Image
               src={imageUrl}
