@@ -6,7 +6,7 @@ export default function GrandCocktailsPage() {
   const cocktails = [
     {
       name: "Borrowed Time",
-      tagline: "A fleeting moment of refreshing.",
+      tagline: "Enjoy it while it lasts.",
       image: {
         src: "/images/BorrowedTime.jpeg", // Remember to place your images here
         alt: "A vibrant blue cocktail with a lemon slice and a splash of pineapple juice, evoking a tropical lagoon."
@@ -27,7 +27,7 @@ export default function GrandCocktailsPage() {
     },
     {
       name: "The Pelican",
-      tagline: "A wise bird's secret, rich and tart.",
+      tagline: "Do the Pelican. This is how it goes.",
       image: {
         src: "/images/ThePelican.jpeg", // Remember to place your images here
         alt: "A deep reddish-orange cocktail with visible muddled cherries at the bottom, garnished with an orange peel."
@@ -49,8 +49,8 @@ export default function GrandCocktailsPage() {
       ]
     },
     {
-      name: "5 AM",
-      tagline: "The tranquil calm before the storm.",
+      name: "Rockabone Bay",
+      tagline: "A delight for summer lovers.",
       image: {
         src: "/images/5AM.jpeg", // Remember to place your images here
         alt: "A clear, serene cocktail with fresh sprigs of rosemary, lavender, and sage, suggesting a morning mist."
