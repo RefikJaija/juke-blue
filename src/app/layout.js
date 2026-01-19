@@ -5,6 +5,13 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import WelcomeGate from './components/WelcomeGate';
 
+// Ensure server-side environment does not expose a non-browser localStorage
+if (typeof window === 'undefined' && typeof globalThis.localStorage !== 'undefined') {
+  try {
+    globalThis.localStorage = undefined;
+  } catch {}
+}
+
 const rye = Rye({
   weight: '400',
   subsets: ['latin'],
