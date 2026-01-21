@@ -27,7 +27,7 @@ export default function MapPage() {
       name: "Nachtvogel",
       address: "Oranienstrasse 39, 10999 Berlin",
       coordinates: [52.5019685, 13.417207],
-      ownerSignatureDrink: "Gabriel",
+      ownerSignatureDrink: "Aslan",
       image: "/images/nachtvogel-bar.jpeg"
     }
     // ...add more bars if needed to test pagination
