@@ -59,7 +59,7 @@ export default function Footer() {
         <img
           src="/images/footer.jpeg"
           alt="Nautical silhouette"
-          className="w-full h-full object-cover opacity-90 object-right-bottom"
+          className=" w-full h-full object-cover opacity-90 object-[89%_100%] md:object-right-bottom"
         />
       </div>
 
