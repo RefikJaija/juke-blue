@@ -102,7 +102,7 @@ export default function ShopPage() {
               <div className="rounded-3xl bg-blush p-[6px]">
 
                 {/* Image container */}
-                <div className="relative h-[28rem] sm:h-[28rem] md:h-[32rem] lg:h-[44rem] xl:h-[52rem] rounded-2xl overflow-hidden ">
+                <div className="relative h-[24rem] sm:h-[24rem] md:h-[28rem] lg:h-[40rem] xl:h-[48rem] rounded-2xl overflow-hidden ">
                   <Image
                     src={imageUrl}
                     alt={imageAlt}
