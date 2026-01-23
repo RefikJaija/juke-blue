@@ -7,7 +7,7 @@ import Link from 'next/link';  // Import Link from next/link
 const MOCK_DOUBLE_BLUE_PRODUCT = {
   id: 1001,
   name: "Double Blue",
-  price: "17.99",
+  price: "23",
   abv: "38%", // Alcohol by volume
   short_description: "<p>Experience the deep and captivating essence of Double Blue Spirit, meticulously crafted for a smooth and memorable finish.</p><p>This premium spirit delivers a smooth and sophisticated taste, perfect for savoring on its own or as the foundation for exquisite cocktails. Crafted with dedication to quality.</p>",
   images: [{ src: '/images/DoubleBlue.jpeg' }],
