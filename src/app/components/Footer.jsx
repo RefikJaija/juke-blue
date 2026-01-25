@@ -67,10 +67,10 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-12 relative z-20">
         <div className="border-b border-antique/20 mb-8 pb-8 text-center">
           <h4 className="font-title text-xl mb-2">
-            Join our newsletter and get 10% off your first order
+            Get invited to signature cocktail launch parties at the hippest Bars in Berlin
           </h4>
           <p className="mb-4 text-blush/80">
-            Sign up today and we'll send you a discount code straight to your inbox.
+            Sign up today and we'll send VIP invites straight to your inbox!
           </p>
           
           <MailchimpSubscribe

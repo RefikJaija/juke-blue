@@ -9,6 +9,7 @@ const MOCK_DOUBLE_BLUE_PRODUCT = {
   name: "Double Blue",
   price: "23",
   abv: "38%", // Alcohol by volume
+  vol: "500ml ", // Volume
   short_description: "<p>Experience the deep and captivating essence of Double Blue Spirit, meticulously crafted for a smooth and memorable finish.</p><p>This premium spirit delivers a smooth and sophisticated taste, perfect for savoring on its own or as the foundation for exquisite cocktails. Crafted with dedication to quality.</p>",
   images: [{ src: '/images/DoubleBlue.jpeg' }],
   stock_status: "instock",
@@ -136,7 +137,7 @@ export default function ShopPage() {
 
         {/* ABV Line */}
         <p className="text-antique/80 text-sm sm:text-base mb-6 tracking-wide uppercase">
-          {product.abv} vol
+          {product.abv} vol | {product.vol} 
         </p>
 
         <div className="w-24 h-1 bg-nautical mb-8 rounded-full"></div>
