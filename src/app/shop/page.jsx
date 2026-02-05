@@ -174,23 +174,26 @@ export default function ShopPage() {
           <p className="text-red-500 text-sm mt-2 text-left w-full sm:w-auto">Currently out of stock.</p>
         )}
 
-        <p className="text-nautical/70 text-sm sm:text-base leading-relaxed max-w-md mx-auto lg:mx-0 mb-4 text-left">
+        {/* <p className="text-nautical/70 text-sm sm:text-base leading-relaxed max-w-md mx-auto lg:mx-0 mb-4 text-left">
           After selecting your amount and clicking <br /> "BUY NOW," you'll be taken to our trusted partner distillery's store to complete your order.
         </p>
         <div className="w-full text-left max-w-md mx-auto lg:mx-0">
           <p className="text-nautical/70 text-sm sm:text-base leading-relaxed mb-4">
             Shipping typically takes 3-5 working days.
           </p>
-        </div>
+        </div> */}
 
         <p className="text-nautical/70 text-sm sm:text-base leading-relaxed max-w-md mx-auto lg:mx-0 mb-4 text-left">
-          We currently only deliver within Germany — if you're based elsewhere, please{" "}
-          <a href="mailto:thejuke@jukeblue.com" className="text-antique underline hover:text-blush transition-colors">
-            get in touch.
+        Order Double Blue from the online shop at our partner distillery{" "}
+          <a href="https://dwersteg.de/collections/partner-editions/products/juke-blue-double-blue-doppelkorn-38?quantity=1" className="text-antique underline hover:text-blush transition-colors">
+            Dwersteg.
           </a>
         </p>
         <p className="text-nautical/70 text-sm sm:text-base leading-relaxed max-w-md mx-auto lg:mx-0 mb-8 text-left">
-          Don't forget to subscribe to our newsletter to receive 10% off your first order!
+           We deliver anywhere in Europe and shipping typically takes 3-5 working days. Bulk trade and retail orders can be placed via{" "}
+            <a href="mailto:info@dwersteg.de" className="text-antique underline hover:text-blush transition-colors">
+               info@dwersteg.de.
+          </a>
         </p>
       </div>
     </div>
