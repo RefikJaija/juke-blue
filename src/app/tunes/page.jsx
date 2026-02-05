@@ -72,7 +72,7 @@ const songBook = [
 },
 {
   title: 'Shadowdance',
-  description: 'This commitment to nature is captured in every bottle, a spirit crafted in harmony with the land. So the next time you share a drink of Double Blue, raise a glass to the unseen forces that guide you. Say “Zum Wohl”. And listen. For therein does adventure begin',
+  description: 'This commitment to Nature is captured in every bottle, a spirit crafted in harmony with the Earth. So the next time you share a drink of Double Blue, raise a glass to the unseen forces that guide you. Say “Zum Wohl”. And listen. For therein does adventure begin.',
   iframeSrc: 'https://bandcamp.com/EmbeddedPlayer/track=1316116703/size=large/bgcol=333333/linkcol=fe7eaf/tracklist=false/transparent=true/',
   bandcampLink: 'https://jukeblue.bandcamp.com/track/shadowdance',
 },

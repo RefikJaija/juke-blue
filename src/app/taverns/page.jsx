@@ -16,11 +16,11 @@ export default function MapPage() {
   const bars = [
     {
       id: 1,
-      name: "Würgrengel Bar",
-      address: "Dresdener Strasse 112, 10999 Berlin",
-      coordinates: [52.5050849, 13.4144688],
-      ownerSignatureDrink: "Felix",
-      image: "/images/felix-bar.jpeg"
+      name: "Schnapphahn",
+      address: "Dresdener Strasse 14, 10999 Berlin",
+      coordinates: [52.500873, 13.417224],
+      ownerSignatureDrink: "Stockist",
+      image: "/images/schnapphahn-bar.jpeg"
     },
     {
       id: 2,
@@ -29,7 +29,16 @@ export default function MapPage() {
       coordinates: [52.5019685, 13.417207],
       ownerSignatureDrink: "Aslan",
       image: "/images/nachtvogel-bar.jpeg"
+    },
+    {
+      id: 3,
+      name: "Piri’s Bar and Diner",
+      address: "Boddinstraße 61, 12053 Berlin",
+      coordinates: [52.480710, 13.433229],
+      ownerSignatureDrink: "Jules",
+      image: "/images/piris-bar.jpeg"
     }
+    
     // ...add more bars if needed to test pagination
   ];
 
