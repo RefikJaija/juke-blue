@@ -169,7 +169,7 @@ export default function GrandCocktailsPage() {
         {/* Grand Navigation Button */}
         <div className="text-center mt-16 sm:mt-20"> {/* Adjusted margin */}
           <Link href="/taverns" className="inline-flex items-center px-8 py-4 sm:px-10 sm:py-5 text-lg bg-antique text-nautical border-2 border-nautical rounded-lg font-title shadow-md hover:bg-blush transition-all duration-200"> {/* Adjusted padding and font size */}
-            <span className="">Discover Bars</span>
+            <span className="">Find the Juke</span>
           </Link>
         </div>
 

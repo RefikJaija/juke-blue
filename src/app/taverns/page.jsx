@@ -42,7 +42,7 @@ export default function MapPage() {
     // ...add more bars if needed to test pagination
   ];
 
-  const initialCenter = [52.50350, 13.41552]; // Berlin center
+  const initialCenter = [52.500873, 13.417223]; // Berlin center
   const getInitialZoom = () => {
   if (typeof window !== "undefined") {
     if (window.innerWidth < 640) return 15; // mobile (tailwind 'sm' breakpoint)
@@ -108,7 +108,7 @@ export default function MapPage() {
 
         {/* The title text, positioned absolutely over the frame */}
         <h1 className="font-title text-xl sm:text-3xl md:text-4xl lg:text-[37px] text-nautical text-center leading-tight absolute inset-0 flex items-center justify-center px-[50px] py-[30px] sm:px-[120px] sm:py-[60px] lg:px-[350px] lg:py-[100px] sm:text-shadow-default z-10">
-          Our Partner Bars
+          Find the Juke
         </h1>
       </div>
 
@@ -116,7 +116,7 @@ export default function MapPage() {
         {/* Sidebar with bar list */}
         <div className="w-full lg:w-1/3 bg-nautical p-6 rounded-3xl shadow-xl border-4 border-antique overflow-y-auto max-h-[400px] lg:max-h-[800px] mb-8 lg:mb-0 flex flex-col"> {/* Added flex-col */}
           <h2 className="font-title text-3xl text-antique text-center mb-6 text-shadow-default">
-            Participating Bars
+            Locations
           </h2>
           <ul className="flex-grow"> {/* Added flex-grow to ul */}
             {currentBars.map((bar) => ( // Use currentBars for pagination
@@ -132,10 +132,19 @@ export default function MapPage() {
                   {bar.address}
                 </p>
                 <p className="font-sans text-sm italic text-blush mt-2">
-                  Signature drink by:{" "}
-                  <span className="font-bold">
-                    {bar.ownerSignatureDrink}
-                  </span>
+                    {bar.ownerSignatureDrink === "Stockist" ? (
+                      <span className="font-bold">
+                        {bar.ownerSignatureDrink}
+                      </span>
+                    ) : (
+                      <>
+                        Signature drink by:{" "}
+                        <span className="font-bold">
+                          {bar.ownerSignatureDrink}
+                        </span>
+                      </>
+                    )}
+
                 </p>
               </li>
             ))}
