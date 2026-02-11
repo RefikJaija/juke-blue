@@ -69,7 +69,7 @@ const BrevoSubscribeForm = () => {
       </div>
       {status === "sending" && <div style={{ color: "#C68CAF", paddingTop: "10px" }}>Subscribing...</div>}
       {status === "error" && <div style={{ color: "#F2E3C0", paddingTop: "10px" }}>{message}</div>}
-      {status === "success" && <div style={{ color: "#C68CAF", paddingTop: "10px" }}>Thank you for subscribing. Check your inbox for the discount code!</div>}
+      {status === "success" && <div style={{ color: "#C68CAF", paddingTop: "10px" }}>Thank you! Please now check your inbox to confirm your email.</div>}
     </div>
   );
 };
