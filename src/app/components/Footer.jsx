@@ -1,41 +1,74 @@
 "use client";
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
-import MailchimpSubscribe from "react-mailchimp-subscribe";
 
-// This is a simple, custom form component that the library will pass props to
-const CustomForm = ({ status, message, onValidated }) => {
-  let email;
-  const submit = () =>
-    email &&
-    email.value.indexOf("@") > -1 &&
-    onValidated({
-      EMAIL: email.value,
-    });
+// Custom Form Component for Brevo
+const BrevoSubscribeForm = () => {
+  const [email, setEmail] = useState('');
+  const [status, setStatus] = useState('idle'); // idle, sending, success, error
+  const [message, setMessage] = useState('');
+
+  const handleSubmit = async (e) => {
+    if (e) e.preventDefault();
+    
+    if (!email || email.indexOf("@") === -1) {
+      setStatus('error');
+      setMessage('Please enter a valid email address');
+      return;
+    }
+
+    setStatus('sending');
+
+    try {
+      const response = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setStatus('success');
+        setMessage('Successfully subscribed!');
+        setEmail('');
+      } else {
+        setStatus('error');
+        setMessage(data.error || 'Something went wrong');
+      }
+    } catch (error) {
+      setStatus('error');
+      setMessage('Failed to subscribe. Please try again.');
+    }
+  };
 
   return (
     <div>
       <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
         <input
-          ref={node => (email = node)}
           type="email"
           placeholder="Your email address"
-          className="w-full sm:w-auto px-4 py-2 rounded-lg text-gray-900"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
           onKeyUp={(event) => {
             if (event.key === "Enter") {
-              submit();
+              handleSubmit();
             }
           }}
+          className="w-full sm:w-auto px-4 py-2 rounded-lg text-gray-900"
         />
         <button
           className="px-6 py-2 text-lg bg-antique text-nautical border-2 border-nautical rounded-lg font-title shadow-md hover:bg-blush transition-all duration-200"
-          onClick={submit}
+          onClick={handleSubmit}
+          disabled={status === 'sending'}
         >
           Subscribe
         </button>
       </div>
       {status === "sending" && <div style={{ color: "#C68CAF", paddingTop: "10px" }}>Subscribing...</div>}
-      {status === "error" && <div style={{ color: "#F2E3C0", paddingTop: "10px" }} dangerouslySetInnerHTML={{ __html: message }} />}
+      {status === "error" && <div style={{ color: "#F2E3C0", paddingTop: "10px" }}>{message}</div>}
       {status === "success" && <div style={{ color: "#C68CAF", paddingTop: "10px" }}>Thank you for subscribing. Check your inbox for the discount code!</div>}
     </div>
   );
@@ -43,8 +76,6 @@ const CustomForm = ({ status, message, onValidated }) => {
 
 // Main Footer Component
 export default function Footer() {
-  const postUrl = "https://app.us19.list-manage.com/subscribe/post-json?u=5d517edfea76bb165baf9794b&id=da73bcfe0d&f_id=004e92e4f0";
-
   return (
     <footer className="bg-nautical text-antique relative mt-20 border-t border-antique min-h-[400px] md:min-h-[500px] lg:min-h-[600px]">
       {/* Backgrounds and overlays */}
@@ -73,16 +104,7 @@ export default function Footer() {
             Sign up today and we'll send VIP invites straight to your inbox!
           </p>
           
-          <MailchimpSubscribe
-            url={postUrl}
-            render={({ subscribe, status, message }) => (
-              <CustomForm
-                status={status}
-                message={message}
-                onValidated={formData => subscribe(formData)}
-              />
-            )}
-          />
+          <BrevoSubscribeForm />
         </div>
 
         {/* The rest of your footer content */}
